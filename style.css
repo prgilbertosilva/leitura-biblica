@@ -113,8 +113,6 @@ a {
 
 .brand small,
 .eyebrow,
-.progress-label,
-.remaining,
 .done-note {
   color: var(--muted);
 }
@@ -146,6 +144,7 @@ a {
 .font-button {
   min-width: 46px;
   border-color: transparent;
+  touch-action: manipulation;
 }
 
 .font-button:disabled {
@@ -176,8 +175,7 @@ a {
 }
 
 .hero {
-  justify-content: space-between;
-  gap: 32px;
+  display: block;
   min-height: 360px;
   padding: clamp(28px, 5vw, 56px);
   background:
@@ -237,46 +235,11 @@ h1 {
   color: #fff;
 }
 
-.progress-panel,
 .reflection,
 .band {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--surface);
-}
-
-.progress-panel {
-  width: min(100%, 280px);
-  padding: 24px;
-}
-
-.progress-number {
-  display: block;
-  font-size: 4rem;
-  line-height: .9;
-  font-weight: 850;
-  color: var(--gold);
-}
-
-.progress-label,
-.remaining {
-  display: block;
-  line-height: 1.45;
-}
-
-.meter {
-  height: 10px;
-  margin: 20px 0 10px;
-  overflow: hidden;
-  background: color-mix(in srgb, var(--line) 74%, transparent);
-  border-radius: 999px;
-}
-
-.meter span {
-  display: block;
-  height: 100%;
-  width: 0%;
-  background: var(--green);
 }
 
 .reading-layout {
@@ -348,12 +311,68 @@ h2 {
   font-size: calc(1rem * var(--reader-scale));
 }
 
+[data-font-scale="90"] .scripture-chapter h3 {
+  font-size: .9rem;
+}
+
+[data-font-scale="100"] .scripture-chapter h3 {
+  font-size: 1rem;
+}
+
+[data-font-scale="110"] .scripture-chapter h3 {
+  font-size: 1.1rem;
+}
+
+[data-font-scale="120"] .scripture-chapter h3 {
+  font-size: 1.2rem;
+}
+
+[data-font-scale="130"] .scripture-chapter h3 {
+  font-size: 1.3rem;
+}
+
+[data-font-scale="140"] .scripture-chapter h3 {
+  font-size: 1.4rem;
+}
+
+[data-font-scale="150"] .scripture-chapter h3 {
+  font-size: 1.5rem;
+}
+
 .scripture-text p {
   margin: 0;
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
   font-size: calc(1.08rem * var(--reader-scale));
   line-height: 1.78;
+}
+
+[data-font-scale="90"] .scripture-text p {
+  font-size: .97rem;
+}
+
+[data-font-scale="100"] .scripture-text p {
+  font-size: 1.08rem;
+}
+
+[data-font-scale="110"] .scripture-text p {
+  font-size: 1.19rem;
+}
+
+[data-font-scale="120"] .scripture-text p {
+  font-size: 1.3rem;
+}
+
+[data-font-scale="130"] .scripture-text p {
+  font-size: 1.4rem;
+}
+
+[data-font-scale="140"] .scripture-text p {
+  font-size: 1.51rem;
+}
+
+[data-font-scale="150"] .scripture-text p {
+  font-size: 1.62rem;
 }
 
 .scripture-text sup {
@@ -379,6 +398,34 @@ h2 {
   color: var(--muted);
   font-size: calc(1rem * var(--reader-scale));
   line-height: 1.7;
+}
+
+[data-font-scale="90"] .reflection p {
+  font-size: .9rem;
+}
+
+[data-font-scale="100"] .reflection p {
+  font-size: 1rem;
+}
+
+[data-font-scale="110"] .reflection p {
+  font-size: 1.1rem;
+}
+
+[data-font-scale="120"] .reflection p {
+  font-size: 1.2rem;
+}
+
+[data-font-scale="130"] .reflection p {
+  font-size: 1.3rem;
+}
+
+[data-font-scale="140"] .reflection p {
+  font-size: 1.4rem;
+}
+
+[data-font-scale="150"] .reflection p {
+  font-size: 1.5rem;
 }
 
 .done-button {
@@ -430,10 +477,6 @@ h2 {
     display: grid;
     min-height: auto;
     padding: 26px;
-  }
-
-  .progress-panel {
-    width: 100%;
   }
 
   .reading-layout {

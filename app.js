@@ -22,9 +22,6 @@ const els = {
   reflection: document.querySelector("#reflectionText"),
   doneButton: document.querySelector("#doneButton"),
   doneNote: document.querySelector("#doneNote"),
-  completedCount: document.querySelector("#completedCount"),
-  meterFill: document.querySelector("#meterFill"),
-  remainingText: document.querySelector("#remainingText"),
   previousLink: document.querySelector("#previousLink"),
   nextLink: document.querySelector("#nextLink"),
   homeLink: document.querySelector("#homeLink"),
@@ -81,7 +78,6 @@ function renderReading(reading) {
   els.homeLink.href = urlForDate(todayIso());
 
   updateDoneState();
-  updateProgress();
 }
 
 function renderSection(block, referenceEl, textEl, reference, scriptureText) {
@@ -196,7 +192,6 @@ function toggleDone() {
   }
   localStorage.setItem("piba.completedReadings", JSON.stringify([...completed]));
   updateDoneState();
-  updateProgress();
 }
 
 function updateDoneState() {
@@ -205,14 +200,6 @@ function updateDoneState() {
   els.doneButton.classList.toggle("is-done", isDone);
   els.doneButton.textContent = isDone ? "Leitura concluida" : "Conclui minha leitura";
   els.doneNote.textContent = isDone ? "Parabens! Sua leitura de hoje ficou registrada neste aparelho." : "";
-}
-
-function updateProgress() {
-  const completed = getCompleted();
-  const total = state.readings.length || 1;
-  els.completedCount.textContent = completed.size;
-  els.meterFill.style.width = `${Math.min(100, Math.round((completed.size / total) * 100))}%`;
-  els.remainingText.textContent = `Restam ${Math.max(0, total - completed.size)} leituras neste plano.`;
 }
 
 function getCompleted() {
@@ -306,7 +293,7 @@ function formatDate(date) {
 }
 
 function applySavedTheme() {
-  const theme = localStorage.getItem("piba.theme") || "light";
+  const theme = readPreference("piba.theme", "light");
   document.documentElement.dataset.theme = theme;
   els.themeButton.textContent = theme === "dark" ? "Sol" : "Lua";
 }
@@ -314,25 +301,42 @@ function applySavedTheme() {
 function toggleTheme() {
   const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = next;
-  localStorage.setItem("piba.theme", next);
+  writePreference("piba.theme", next);
   els.themeButton.textContent = next === "dark" ? "Sol" : "Lua";
 }
 
 function applySavedFontScale() {
-  const saved = Number(localStorage.getItem("piba.fontScale") || "100");
+  const saved = Number(readPreference("piba.fontScale", "100"));
   setFontScale(Number.isFinite(saved) ? saved : 100);
 }
 
 function changeFontScale(step) {
-  const current = Number(localStorage.getItem("piba.fontScale") || "100");
+  const current = Number(readPreference("piba.fontScale", "100"));
   setFontScale(current + (step * 10));
 }
 
 function setFontScale(value) {
   const scale = Math.min(150, Math.max(90, value));
   document.documentElement.style.setProperty("--reader-scale", scale / 100);
-  localStorage.setItem("piba.fontScale", String(scale));
+  document.documentElement.dataset.fontScale = String(scale);
+  writePreference("piba.fontScale", String(scale));
   els.fontSizeLabel.textContent = `${scale}%`;
   els.decreaseFontButton.disabled = scale <= 90;
   els.increaseFontButton.disabled = scale >= 150;
+}
+
+function readPreference(key, fallback) {
+  try {
+    return localStorage.getItem(key) || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function writePreference(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // Keep controls working even when browser storage is unavailable.
+  }
 }
