@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leitura Biblica PIBA</title>
+    <meta name="description" content="Portal diario de leitura biblica da PIBA com links, reflexao, progresso e compartilhamento.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="Voltar para a leitura de hoje">
+          <span class="brand-mark">PIBA</span>
+          <span>
+            <strong>Leitura Biblica</strong>
+            <small>Plano diario</small>
+          </span>
+        </a>
+        <div class="toolbar">
+          <button class="icon-button" id="todayButton" type="button" title="Leitura de hoje" aria-label="Leitura de hoje">Hoje</button>
+          <button class="icon-button" id="themeButton" type="button" title="Alternar tema" aria-label="Alternar tema">Lua</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="pageTitle">
+          <div class="hero-content">
+            <p class="eyebrow" id="dayLabel">Leitura para hoje</p>
+            <h1 id="pageTitle">Carregando leitura...</h1>
+            <p class="hero-copy" id="summaryText"></p>
+            <div class="hero-actions">
+              <a class="primary-action" id="startButton" href="#leituras">Iniciar leitura</a>
+              <button class="secondary-action" id="shareButton" type="button">Compartilhar</button>
+            </div>
+          </div>
+          <aside class="progress-panel" aria-label="Progresso da leitura">
+            <span class="progress-number" id="completedCount">0</span>
+            <span class="progress-label">dias concluidos neste aparelho</span>
+            <div class="meter"><span id="meterFill"></span></div>
+            <span class="remaining" id="remainingText"></span>
+          </aside>
+        </section>
+
+        <section class="reading-layout" id="leituras">
+          <div class="reading-main">
+            <section class="band" id="oldTestamentBlock">
+              <div class="section-heading">
+                <span class="section-icon blue"></span>
+                <h2>Antigo Testamento</h2>
+              </div>
+              <p class="reference" id="oldReference"></p>
+              <div class="scripture-text" id="oldText"></div>
+            </section>
+
+            <section class="band" id="wisdomBlock">
+              <div class="section-heading">
+                <span class="section-icon amber"></span>
+                <h2>Salmos / Proverbios</h2>
+              </div>
+              <p class="reference" id="wisdomReference"></p>
+              <div class="scripture-text" id="wisdomText"></div>
+            </section>
+
+            <section class="band" id="newTestamentBlock">
+              <div class="section-heading">
+                <span class="section-icon green"></span>
+                <h2>Novo Testamento</h2>
+              </div>
+              <p class="reference" id="newReference"></p>
+              <div class="scripture-text" id="newText"></div>
+            </section>
+          </div>
+
+          <aside class="reflection">
+            <h2>Reflexao do dia</h2>
+            <p id="reflectionText"></p>
+            <button class="done-button" id="doneButton" type="button">Conclui minha leitura</button>
+            <p class="done-note" id="doneNote" aria-live="polite"></p>
+          </aside>
+        </section>
+
+        <nav class="day-nav" aria-label="Navegar entre leituras">
+          <a id="previousLink" href="#">Ontem</a>
+          <a id="homeLink" href="./">Inicio</a>
+          <a id="nextLink" href="#">Amanha</a>
+        </nav>
+      </main>
+    </div>
+
+    <script src="data/leituras.js"></script>
+    <script src="data/biblia-nvi.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
