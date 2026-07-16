@@ -44,7 +44,11 @@ async function init() {
   state.readingByDate = new Map(state.readings.map((reading) => [reading.date, reading]));
 
   const date = getDateFromPath() || todayIso();
-  renderReading(state.readingByDate.get(date) || state.readings[0]);
+  const reading = resolveAllowedReading(date);
+  if (date > todayIso() && reading) {
+    history.replaceState({}, "", urlForDate(reading.date));
+  }
+  renderReading(reading);
 }
 
 async function loadReadings() {
@@ -74,7 +78,7 @@ function renderReading(reading) {
 
   const currentIndex = state.readings.findIndex((item) => item.date === reading.date);
   setNavLink(els.previousLink, state.readings[currentIndex - 1]);
-  setNavLink(els.nextLink, state.readings[currentIndex + 1]);
+  setNavLink(els.nextLink, readingAllowedByDate(state.readings[currentIndex + 1]) ? state.readings[currentIndex + 1] : null);
   els.homeLink.href = urlForDate(todayIso());
 
   updateDoneState();
@@ -179,7 +183,7 @@ function bindActions() {
   els.increaseFontButton.addEventListener("click", () => changeFontScale(1));
   window.addEventListener("popstate", () => {
     const date = getDateFromPath() || todayIso();
-    renderReading(state.readingByDate.get(date) || state.readings[0]);
+    renderReading(resolveAllowedReading(date));
   });
 }
 
@@ -226,11 +230,27 @@ function setNavLink(link, reading) {
 }
 
 function navigateToDate(date) {
-  const reading = state.readingByDate.get(date);
+  const reading = resolveAllowedReading(date);
   if (!reading) return;
-  history.pushState({}, "", urlForDate(date));
+  history.pushState({}, "", urlForDate(reading.date));
   renderReading(reading);
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function resolveAllowedReading(date) {
+  if (date > todayIso()) {
+    return state.readingByDate.get(todayIso()) || latestAvailableReading();
+  }
+  return state.readingByDate.get(date) || latestAvailableReading() || state.readings[0];
+}
+
+function latestAvailableReading() {
+  const today = todayIso();
+  return [...state.readings].reverse().find((reading) => reading.date <= today);
+}
+
+function readingAllowedByDate(reading) {
+  return Boolean(reading && reading.date <= todayIso());
 }
 
 async function shareReading() {
