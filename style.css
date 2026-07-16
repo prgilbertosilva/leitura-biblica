@@ -228,6 +228,31 @@ h1 {
   padding: 0 18px;
 }
 
+.date-picker {
+  display: inline-grid;
+  gap: 4px;
+  min-width: 190px;
+}
+
+.date-picker span {
+  color: var(--muted);
+  font-size: .78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.date-picker input {
+  min-height: 44px;
+  width: 100%;
+  padding: 0 12px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 700;
+}
+
 .primary-action,
 .done-button {
   background: var(--green);
@@ -535,6 +560,10 @@ h2 {
 
   .font-button {
     flex: 1;
+  }
+
+  .date-picker {
+    width: 100%;
   }
 
   h1 {

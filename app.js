@@ -28,6 +28,7 @@ const els = {
   todayButton: document.querySelector("#todayButton"),
   themeButton: document.querySelector("#themeButton"),
   shareButton: document.querySelector("#shareButton"),
+  readingDatePicker: document.querySelector("#readingDatePicker"),
   decreaseFontButton: document.querySelector("#decreaseFontButton"),
   increaseFontButton: document.querySelector("#increaseFontButton"),
   fontSizeLabel: document.querySelector("#fontSizeLabel"),
@@ -80,6 +81,7 @@ function renderReading(reading) {
   setNavLink(els.previousLink, state.readings[currentIndex - 1]);
   setNavLink(els.nextLink, readingAllowedByDate(state.readings[currentIndex + 1]) ? state.readings[currentIndex + 1] : null);
   els.homeLink.href = urlForDate(todayIso());
+  updateDatePicker(reading);
 
   updateDoneState();
 }
@@ -178,6 +180,7 @@ function bindActions() {
   els.doneButton.addEventListener("click", toggleDone);
   els.todayButton.addEventListener("click", () => navigateToDate(todayIso()));
   els.shareButton.addEventListener("click", shareReading);
+  els.readingDatePicker.addEventListener("change", () => navigateToDate(els.readingDatePicker.value));
   els.themeButton.addEventListener("click", toggleTheme);
   els.decreaseFontButton.addEventListener("click", () => changeFontScale(-1));
   els.increaseFontButton.addEventListener("click", () => changeFontScale(1));
@@ -185,6 +188,13 @@ function bindActions() {
     const date = getDateFromPath() || todayIso();
     renderReading(resolveAllowedReading(date));
   });
+}
+
+function updateDatePicker(reading) {
+  const availableDates = state.readings.map((item) => item.date).filter((date) => date <= todayIso());
+  els.readingDatePicker.min = availableDates[0] || reading.date;
+  els.readingDatePicker.max = todayIso();
+  els.readingDatePicker.value = reading.date;
 }
 
 function toggleDone() {
