@@ -105,6 +105,11 @@ a {
   display: block;
 }
 
+.brand strong {
+  max-width: min(52vw, 360px);
+  line-height: 1.15;
+}
+
 .brand small,
 .eyebrow,
 .progress-label,
@@ -408,8 +413,22 @@ h2 {
 }
 
 @media (max-width: 480px) {
-  .brand span:last-child {
-    display: none;
+  .brand {
+    gap: 8px;
+  }
+
+  .brand-mark {
+    width: 52px;
+    height: 52px;
+  }
+
+  .brand strong {
+    max-width: 180px;
+    font-size: .92rem;
+  }
+
+  .brand small {
+    font-size: .78rem;
   }
 
   .icon-button {

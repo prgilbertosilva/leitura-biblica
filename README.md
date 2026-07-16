@@ -1,4 +1,4 @@
-# Leitura Biblica PIBA
+# Clube de Leitura da Biblia PIBA
 
 Primeira versao do portal diario de leitura biblica.
 

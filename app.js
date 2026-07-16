@@ -60,7 +60,7 @@ function renderReading(reading) {
   const formattedDate = formatDate(reading.date);
   const references = [reading.oldTestament, reading.wisdom, reading.newTestament].filter(Boolean);
 
-  document.title = `Leitura Biblica PIBA - ${formattedDate}`;
+  document.title = `Clube de Leitura da Biblia PIBA - ${formattedDate}`;
   els.dayLabel.textContent = `Leitura para hoje: ${formattedDate}`;
   els.title.textContent = references.join(" e ");
   els.summary.textContent = `Leia os capitulos na propria pagina, acompanhe a reflexao e marque a leitura como concluida ao terminar.`;
