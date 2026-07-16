@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clube de Leitura da Biblia PIBA</title>
     <meta name="description" content="Portal diario do Clube de Leitura da Biblia PIBA com texto biblico, reflexao, progresso e compartilhamento.">
-    <link rel="stylesheet" href="style.css?v=20260716-2">
+    <link rel="stylesheet" href="style.css?v=20260716-3">
   </head>
   <body>
     <div class="app-shell">
@@ -39,10 +39,13 @@
             <div class="hero-actions">
               <a class="primary-action" id="startButton" href="#leituras">Iniciar leitura</a>
               <button class="secondary-action" id="shareButton" type="button">Compartilhar</button>
-              <label class="date-picker">
-                <span>Escolher data</span>
-                <input id="readingDatePicker" type="date" aria-label="Escolher data da leitura">
-              </label>
+              <div class="date-picker">
+                <label for="readingDatePicker">Escolher data</label>
+                <span class="date-picker-row">
+                  <input id="readingDatePicker" type="date" aria-label="Escolher data da leitura">
+                  <button class="secondary-action date-picker-button" id="openDateButton" type="button">Abrir</button>
+                </span>
+              </div>
             </div>
           </div>
         </section>
@@ -94,8 +97,8 @@
       </main>
     </div>
 
-    <script src="data/leituras.js"></script>
+    <script src="data/leituras.js?v=20260716-8"></script>
     <script src="data/biblia-nvi.js"></script>
-    <script src="app.js?v=20260716-5"></script>
+    <script src="app.js?v=20260716-9"></script>
   </body>
 </html>

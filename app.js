@@ -29,6 +29,7 @@ const els = {
   themeButton: document.querySelector("#themeButton"),
   shareButton: document.querySelector("#shareButton"),
   readingDatePicker: document.querySelector("#readingDatePicker"),
+  openDateButton: document.querySelector("#openDateButton"),
   decreaseFontButton: document.querySelector("#decreaseFontButton"),
   increaseFontButton: document.querySelector("#increaseFontButton"),
   fontSizeLabel: document.querySelector("#fontSizeLabel"),
@@ -47,7 +48,7 @@ async function init() {
   const date = getDateFromPath() || todayIso();
   const reading = resolveAllowedReading(date);
   if (date > todayIso() && reading) {
-    history.replaceState({}, "", urlForDate(reading.date));
+    replaceUrlForDate(reading.date);
   }
   renderReading(reading);
 }
@@ -149,19 +150,55 @@ function createChapterText(chapter) {
 }
 
 function chaptersFromReference(reference) {
-  const normalized = normalizeText(reference).replace(/\s+/g, " ").trim();
-  const match = normalized.match(/^(.+?)\s+(\d+)(?::\d+)?(?:\s*[–-]\s*(\d+)(?::\d+)?)?$/);
-  if (!match) return [];
-
-  const book = match[1].trim();
-  const start = Number(match[2]);
-  const end = Number(match[3] || match[2]);
-
+  const parts = normalizeText(reference)
+    .replace(/\s+/g, " ")
+    .split(/\s*(?:\+|\u00b7)\s*/)
+    .map((part) => part.trim())
+    .filter(Boolean);
   const chapters = [];
-  for (let chapter = start; chapter <= end; chapter += 1) {
-    chapters.push({ book, chapter });
+  let lastBook = "";
+
+  for (const part of parts) {
+    const parsed = parseReferencePart(part, lastBook);
+    if (!parsed) continue;
+    lastBook = parsed.book;
+    for (let chapter = parsed.start; chapter <= parsed.end; chapter += 1) {
+      chapters.push({ book: parsed.book, chapter });
+    }
   }
+
   return chapters;
+}
+
+function parseReferencePart(part, fallbackBook) {
+  const match = part.match(/^(.+?)\s+(\d+)(?::\d+)?(?:\s*[–-]\s*(\d+)(?::\d+)?)?$/);
+  if (match) {
+    const book = canonicalBookName(match[1].trim());
+    return {
+      book,
+      start: Number(match[2]),
+      end: Number(match[3] || match[2]),
+    };
+  }
+
+  const continuation = part.match(/^(\d+)(?::\d+)?(?:\s*[–-]\s*(\d+)(?::\d+)?)?$/);
+  if (continuation && fallbackBook) {
+    return {
+      book: fallbackBook,
+      start: Number(continuation[1]),
+      end: Number(continuation[2] || continuation[1]),
+    };
+  }
+
+  return null;
+}
+
+function canonicalBookName(book) {
+  const aliases = {
+    Salmo: "Salmos",
+    Proverbio: "Proverbios",
+  };
+  return aliases[book] || book;
 }
 
 function humanizeReference(value) {
@@ -172,15 +209,16 @@ function normalizeText(value) {
   return value
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/º/g, "")
-    .replace(/ª/g, "");
+    .replace(/\u00ba/g, "")
+    .replace(/\u00aa/g, "");
 }
 
 function bindActions() {
   els.doneButton.addEventListener("click", toggleDone);
   els.todayButton.addEventListener("click", () => navigateToDate(todayIso()));
   els.shareButton.addEventListener("click", shareReading);
-  els.readingDatePicker.addEventListener("change", () => navigateToDate(els.readingDatePicker.value));
+  els.readingDatePicker.addEventListener("change", openSelectedDate);
+  els.openDateButton.addEventListener("click", openSelectedDate);
   els.themeButton.addEventListener("click", toggleTheme);
   els.decreaseFontButton.addEventListener("click", () => changeFontScale(-1));
   els.increaseFontButton.addEventListener("click", () => changeFontScale(1));
@@ -191,10 +229,32 @@ function bindActions() {
 }
 
 function updateDatePicker(reading) {
-  const availableDates = state.readings.map((item) => item.date).filter((date) => date <= todayIso());
-  els.readingDatePicker.min = availableDates[0] || reading.date;
+  els.readingDatePicker.min = planStartDate();
   els.readingDatePicker.max = todayIso();
   els.readingDatePicker.value = reading.date;
+}
+
+function openSelectedDate() {
+  const selectedDate = normalizeDateInput(els.readingDatePicker.value);
+  if (!selectedDate) return;
+  navigateToDate(selectedDate);
+}
+
+function normalizeDateInput(value) {
+  if (!value) return "";
+  const cleanValue = String(value).trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(cleanValue)) return cleanValue;
+
+  const brazilianDate = cleanValue.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+  if (brazilianDate) {
+    return `${brazilianDate[3]}-${brazilianDate[2]}-${brazilianDate[1]}`;
+  }
+
+  return cleanValue;
+}
+
+function planStartDate() {
+  return state.readings[0]?.date || todayIso();
 }
 
 function toggleDone() {
@@ -240,11 +300,24 @@ function setNavLink(link, reading) {
 }
 
 function navigateToDate(date) {
-  const reading = resolveAllowedReading(date);
+  const reading = readingForSelectedDate(normalizeDateInput(date));
   if (!reading) return;
-  history.pushState({}, "", urlForDate(reading.date));
   renderReading(reading);
+  pushUrlForDate(reading.date);
   window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function readingForSelectedDate(date) {
+  if (date > todayIso()) {
+    return state.readingByDate.get(todayIso()) || latestAvailableReading();
+  }
+  const reading = state.readingByDate.get(date);
+  if (!reading) {
+    els.readingDatePicker.value = state.active?.date || todayIso();
+    els.doneNote.textContent = "Nao ha leitura cadastrada para esta data.";
+    return null;
+  }
+  return reading;
 }
 
 function resolveAllowedReading(date) {
@@ -300,6 +373,9 @@ function whatsappText(reading) {
 }
 
 function getDateFromPath() {
+  const hashMatch = window.location.hash.match(/^#(\d{4}-\d{2}-\d{2})$/);
+  if (hashMatch) return hashMatch[1];
+
   const match = window.location.pathname.match(/(\d{4})\/(\d{2})\/(\d{2})\/?$/);
   return match ? `${match[1]}-${match[2]}-${match[3]}` : null;
 }
@@ -307,6 +383,26 @@ function getDateFromPath() {
 function urlForDate(date) {
   const [year, month, day] = date.split("-");
   return new URL(`${year}/${month}/${day}/`, appBaseUrl).pathname;
+}
+
+function pushUrlForDate(date) {
+  updateUrlForDate(date, "pushState");
+}
+
+function replaceUrlForDate(date) {
+  updateUrlForDate(date, "replaceState");
+}
+
+function updateUrlForDate(date, method) {
+  try {
+    if (window.location.protocol === "file:") {
+      history[method]({}, "", `#${date}`);
+      return;
+    }
+    history[method]({}, "", urlForDate(date));
+  } catch {
+    window.location.hash = date;
+  }
 }
 
 function absoluteUrlForDate(date) {
