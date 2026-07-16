@@ -185,13 +185,18 @@ function bindActions() {
 
 function toggleDone() {
   const completed = getCompleted();
+  let markedAsDone = false;
   if (completed.has(state.active.date)) {
     completed.delete(state.active.date);
   } else {
     completed.add(state.active.date);
+    markedAsDone = true;
   }
   localStorage.setItem("piba.completedReadings", JSON.stringify([...completed]));
   updateDoneState();
+  if (markedAsDone) {
+    openCompletionMessage();
+  }
 }
 
 function updateDoneState() {
@@ -234,6 +239,12 @@ async function shareReading() {
     await navigator.share({ text });
     return;
   }
+  const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+function openCompletionMessage() {
+  const text = "Amém 🙏 Concluí minha leitura de hoje!";
   const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
   window.open(url, "_blank", "noopener,noreferrer");
 }

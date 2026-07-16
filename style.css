@@ -433,6 +433,17 @@ h2 {
   margin-top: 14px;
 }
 
+.whatsapp-help {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.5;
+}
+
+.whatsapp-help strong {
+  color: var(--text);
+}
+
 .done-button.is-done {
   background: var(--gold);
   border-color: var(--gold);
