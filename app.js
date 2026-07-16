@@ -31,12 +31,16 @@ const els = {
   todayButton: document.querySelector("#todayButton"),
   themeButton: document.querySelector("#themeButton"),
   shareButton: document.querySelector("#shareButton"),
+  decreaseFontButton: document.querySelector("#decreaseFontButton"),
+  increaseFontButton: document.querySelector("#increaseFontButton"),
+  fontSizeLabel: document.querySelector("#fontSizeLabel"),
 };
 
 init();
 
 async function init() {
   applySavedTheme();
+  applySavedFontScale();
   bindActions();
 
   state.readings = await loadReadings();
@@ -175,6 +179,8 @@ function bindActions() {
   els.todayButton.addEventListener("click", () => navigateToDate(todayIso()));
   els.shareButton.addEventListener("click", shareReading);
   els.themeButton.addEventListener("click", toggleTheme);
+  els.decreaseFontButton.addEventListener("click", () => changeFontScale(-1));
+  els.increaseFontButton.addEventListener("click", () => changeFontScale(1));
   window.addEventListener("popstate", () => {
     const date = getDateFromPath() || todayIso();
     renderReading(state.readingByDate.get(date) || state.readings[0]);
@@ -310,4 +316,23 @@ function toggleTheme() {
   document.documentElement.dataset.theme = next;
   localStorage.setItem("piba.theme", next);
   els.themeButton.textContent = next === "dark" ? "Sol" : "Lua";
+}
+
+function applySavedFontScale() {
+  const saved = Number(localStorage.getItem("piba.fontScale") || "100");
+  setFontScale(Number.isFinite(saved) ? saved : 100);
+}
+
+function changeFontScale(step) {
+  const current = Number(localStorage.getItem("piba.fontScale") || "100");
+  setFontScale(current + (step * 10));
+}
+
+function setFontScale(value) {
+  const scale = Math.min(150, Math.max(90, value));
+  document.documentElement.style.setProperty("--reader-scale", scale / 100);
+  localStorage.setItem("piba.fontScale", String(scale));
+  els.fontSizeLabel.textContent = `${scale}%`;
+  els.decreaseFontButton.disabled = scale <= 90;
+  els.increaseFontButton.disabled = scale >= 150;
 }
