@@ -29,7 +29,6 @@ const els = {
   themeButton: document.querySelector("#themeButton"),
   shareButton: document.querySelector("#shareButton"),
   readingDatePicker: document.querySelector("#readingDatePicker"),
-  openDateButton: document.querySelector("#openDateButton"),
   decreaseFontButton: document.querySelector("#decreaseFontButton"),
   increaseFontButton: document.querySelector("#increaseFontButton"),
   fontSizeLabel: document.querySelector("#fontSizeLabel"),
@@ -47,9 +46,6 @@ async function init() {
 
   const date = getDateFromPath() || todayIso();
   const reading = resolveAllowedReading(date);
-  if (date > todayIso() && reading) {
-    replaceUrlForDate(reading.date);
-  }
   renderReading(reading);
 }
 
@@ -69,8 +65,9 @@ function renderReading(reading) {
 
   document.title = `Clube de Leitura da Biblia PIBA - ${formattedDate}`;
   els.dayLabel.textContent = `Leitura para hoje: ${formattedDate}`;
+  els.dayLabel.href = urlForDate(todayIso());
   els.title.textContent = references.join(" e ");
-  els.summary.textContent = `Leia os capitulos na propria pagina, acompanhe a reflexao e marque a leitura como concluida ao terminar.`;
+  els.summary.textContent = `Leia os textos na propria pagina, acompanhe a reflexao e marque a leitura como concluida ao terminar.`;
 
   renderSection(els.oldBlock, els.oldReference, els.oldText, reading.oldTestament, reading.oldText);
   renderSection(els.wisdomBlock, els.wisdomReference, els.wisdomText, reading.wisdom, reading.wisdomText);
@@ -80,7 +77,7 @@ function renderReading(reading) {
 
   const currentIndex = state.readings.findIndex((item) => item.date === reading.date);
   setNavLink(els.previousLink, state.readings[currentIndex - 1]);
-  setNavLink(els.nextLink, readingAllowedByDate(state.readings[currentIndex + 1]) ? state.readings[currentIndex + 1] : null);
+  setNavLink(els.nextLink, state.readings[currentIndex + 1]);
   els.homeLink.href = urlForDate(todayIso());
   updateDatePicker(reading);
 
@@ -121,13 +118,27 @@ function renderScriptureText(container, value, reference) {
 
 function scriptureFromBible(reference) {
   if (!window.BIBLIA_NVI) return "";
-  return chaptersFromReference(reference).map((chapter) => {
-    const key = `${chapter.book} ${chapter.chapter}`;
+  return chaptersFromReference(reference).map((segment) => {
+    const key = `${segment.book} ${segment.chapter}`;
+    const verses = window.BIBLIA_NVI[key] || [];
     return {
-      title: key,
-      verses: window.BIBLIA_NVI[key] || [],
+      title: titleForSegment(key, segment),
+      verses: filterVerses(verses, segment),
     };
-  }).filter((chapter) => chapter.verses.length > 0);
+  }).filter((segment) => segment.verses.length > 0);
+}
+
+function titleForSegment(key, segment) {
+  if (!segment.startVerse && !segment.endVerse) return key;
+  if (segment.startVerse && segment.endVerse) return `${key}:${segment.startVerse}-${segment.endVerse}`;
+  if (segment.startVerse) return `${key}:${segment.startVerse}-`;
+  return `${key}:1-${segment.endVerse}`;
+}
+
+function filterVerses(verses, segment) {
+  const startVerse = segment.startVerse || 1;
+  const endVerse = segment.endVerse || Infinity;
+  return verses.filter((verse) => verse.v >= startVerse && verse.v <= endVerse);
 }
 
 function createChapterText(chapter) {
@@ -163,7 +174,12 @@ function chaptersFromReference(reference) {
     if (!parsed) continue;
     lastBook = parsed.book;
     for (let chapter = parsed.start; chapter <= parsed.end; chapter += 1) {
-      chapters.push({ book: parsed.book, chapter });
+      chapters.push({
+        book: parsed.book,
+        chapter,
+        startVerse: chapter === parsed.start ? parsed.startVerse : null,
+        endVerse: chapter === parsed.end ? parsed.endVerse : null,
+      });
     }
   }
 
@@ -171,22 +187,34 @@ function chaptersFromReference(reference) {
 }
 
 function parseReferencePart(part, fallbackBook) {
-  const match = part.match(/^(.+?)\s+(\d+)(?::\d+)?(?:\s*[–-]\s*(\d+)(?::\d+)?)?$/);
+  const match = part.match(/^(.+?)\s+(\d+)(?::(\d+))?(?:\s*[–-]\s*(?:(\d+):)?(\d+))?$/);
   if (match) {
     const book = canonicalBookName(match[1].trim());
+    const startChapter = Number(match[2]);
+    const startVerse = match[3] ? Number(match[3]) : null;
+    const endChapter = match[4] ? Number(match[4]) : (startVerse && match[5] ? startChapter : Number(match[5] || match[2]));
+    const endVerse = startVerse && match[5] ? Number(match[5]) : null;
     return {
       book,
-      start: Number(match[2]),
-      end: Number(match[3] || match[2]),
+      start: startChapter,
+      end: endChapter,
+      startVerse,
+      endVerse,
     };
   }
 
-  const continuation = part.match(/^(\d+)(?::\d+)?(?:\s*[–-]\s*(\d+)(?::\d+)?)?$/);
+  const continuation = part.match(/^(\d+)(?::(\d+))?(?:\s*[–-]\s*(?:(\d+):)?(\d+))?$/);
   if (continuation && fallbackBook) {
+    const startChapter = Number(continuation[1]);
+    const startVerse = continuation[2] ? Number(continuation[2]) : null;
+    const endChapter = continuation[3] ? Number(continuation[3]) : (startVerse && continuation[4] ? startChapter : Number(continuation[4] || continuation[1]));
+    const endVerse = startVerse && continuation[4] ? Number(continuation[4]) : null;
     return {
       book: fallbackBook,
-      start: Number(continuation[1]),
-      end: Number(continuation[2] || continuation[1]),
+      start: startChapter,
+      end: endChapter,
+      startVerse,
+      endVerse,
     };
   }
 
@@ -195,6 +223,9 @@ function parseReferencePart(part, fallbackBook) {
 
 function canonicalBookName(book) {
   const aliases = {
+    "1 Joao": "1 Joao",
+    "2 Joao": "2 Joao",
+    "3 Joao": "3 Joao",
     Salmo: "Salmos",
     Proverbio: "Proverbios",
   };
@@ -218,7 +249,7 @@ function bindActions() {
   els.todayButton.addEventListener("click", () => navigateToDate(todayIso()));
   els.shareButton.addEventListener("click", shareReading);
   els.readingDatePicker.addEventListener("change", openSelectedDate);
-  els.openDateButton.addEventListener("click", openSelectedDate);
+  els.readingDatePicker.addEventListener("input", openSelectedDate);
   els.themeButton.addEventListener("click", toggleTheme);
   els.decreaseFontButton.addEventListener("click", () => changeFontScale(-1));
   els.increaseFontButton.addEventListener("click", () => changeFontScale(1));
@@ -230,7 +261,7 @@ function bindActions() {
 
 function updateDatePicker(reading) {
   els.readingDatePicker.min = planStartDate();
-  els.readingDatePicker.max = todayIso();
+  els.readingDatePicker.max = planEndDate();
   els.readingDatePicker.value = reading.date;
 }
 
@@ -255,6 +286,10 @@ function normalizeDateInput(value) {
 
 function planStartDate() {
   return state.readings[0]?.date || todayIso();
+}
+
+function planEndDate() {
+  return state.readings[state.readings.length - 1]?.date || todayIso();
 }
 
 function toggleDone() {
@@ -308,9 +343,6 @@ function navigateToDate(date) {
 }
 
 function readingForSelectedDate(date) {
-  if (date > todayIso()) {
-    return state.readingByDate.get(todayIso()) || latestAvailableReading();
-  }
   const reading = state.readingByDate.get(date);
   if (!reading) {
     els.readingDatePicker.value = state.active?.date || todayIso();
@@ -321,19 +353,7 @@ function readingForSelectedDate(date) {
 }
 
 function resolveAllowedReading(date) {
-  if (date > todayIso()) {
-    return state.readingByDate.get(todayIso()) || latestAvailableReading();
-  }
-  return state.readingByDate.get(date) || latestAvailableReading() || state.readings[0];
-}
-
-function latestAvailableReading() {
-  const today = todayIso();
-  return [...state.readings].reverse().find((reading) => reading.date <= today);
-}
-
-function readingAllowedByDate(reading) {
-  return Boolean(reading && reading.date <= todayIso());
+  return state.readingByDate.get(date) || state.readingByDate.get(todayIso()) || state.readings[0];
 }
 
 async function shareReading() {

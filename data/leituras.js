@@ -1021,1492 +1021,1492 @@ window.LEITURAS_DATA = [
   },
   {
     "date": "2026-07-18",
-    "oldTestament": "Eclesiastes 11–12",
+    "oldTestament": "Eclesiastes 11-12",
     "wisdom": "",
-    "newTestament": "1 Tessalonicenses 1",
+    "newTestament": "1 Tessalonicenses 1:1-10",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Eclesiastes 11–12 e 1 Tessalonicenses 1 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Eclesiastes 11-12 e 1 Tessalonicenses 1:1-10 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-07-19",
-    "oldTestament": "Cantares 1–2",
+    "oldTestament": "Cantares 1",
     "wisdom": "",
-    "newTestament": "1 Tessalonicenses 2",
+    "newTestament": "1 Tessalonicenses 2:1-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Cantares 1–2 e 1 Tessalonicenses 2, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Cantares 1 e 1 Tessalonicenses 2:1-11, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-07-20",
-    "oldTestament": "Cantares 3–4",
+    "oldTestament": "Cantares 2-3",
     "wisdom": "",
-    "newTestament": "1 Tessalonicenses 3",
+    "newTestament": "1 Tessalonicenses 2:12-3:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Cantares 3–4 e 1 Tessalonicenses 3 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Cantares 2-3 e 1 Tessalonicenses 2:12-3:1 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-07-21",
-    "oldTestament": "Cantares 5–6",
+    "oldTestament": "Cantares 4-5",
     "wisdom": "",
-    "newTestament": "1 Tessalonicenses 4",
+    "newTestament": "1 Tessalonicenses 3:2-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Cantares 5–6 e 1 Tessalonicenses 4 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Cantares 4-5 e 1 Tessalonicenses 3:2-11 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-07-22",
-    "oldTestament": "Cantares 7–8",
+    "oldTestament": "Cantares 6-7",
     "wisdom": "",
-    "newTestament": "1 Tessalonicenses 5",
+    "newTestament": "1 Tessalonicenses 3:12-4:9",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Cantares 7–8 e 1 Tessalonicenses 5, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Cantares 6-7 e 1 Tessalonicenses 3:12-4:9 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-07-23",
-    "oldTestament": "Isaías 1–2",
+    "oldTestament": "Cantares 8",
     "wisdom": "",
-    "newTestament": "2 Tessalonicenses 1",
+    "newTestament": "1 Tessalonicenses 4:10-5:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 1–2 e 2 Tessalonicenses 1 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Cantares 8 e 1 Tessalonicenses 4:10-5:1, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-07-24",
-    "oldTestament": "Isaías 3–4",
+    "oldTestament": "Isa?as 1-2",
     "wisdom": "",
-    "newTestament": "2 Tessalonicenses 2",
+    "newTestament": "1 Tessalonicenses 5:2-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 3–4 e 2 Tessalonicenses 2 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Isa?as 1-2 e 1 Tessalonicenses 5:2-11 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-07-25",
-    "oldTestament": "Isaías 5–6",
+    "oldTestament": "Isa?as 3-4",
     "wisdom": "",
-    "newTestament": "2 Tessalonicenses 3",
+    "newTestament": "1 Tessalonicenses 5:12-22",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 5–6 e 2 Tessalonicenses 3, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Isa?as 3-4 e 1 Tessalonicenses 5:12-22 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-07-26",
-    "oldTestament": "Isaías 7–8",
+    "oldTestament": "Isa?as 5-6",
     "wisdom": "",
-    "newTestament": "1 Timóteo 1",
+    "newTestament": "1 Tessalonicenses 5:23-28 + 2 Tessalonicenses 1:1-4",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 7–8 e 1 Timóteo 1 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Isa?as 5-6 e 1 Tessalonicenses 5:23-28 + 2 Tessalonicenses 1:1-4 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-07-27",
-    "oldTestament": "Isaías 9–10",
+    "oldTestament": "Isa?as 7",
     "wisdom": "",
-    "newTestament": "1 Timóteo 2",
+    "newTestament": "2 Tessalonicenses 1:5-2:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 9–10 e 1 Timóteo 2 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Isa?as 7 e 2 Tessalonicenses 1:5-2:2, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-07-28",
-    "oldTestament": "Isaías 11–12",
+    "oldTestament": "Isa?as 8-9",
     "wisdom": "",
-    "newTestament": "1 Timóteo 3",
+    "newTestament": "2 Tessalonicenses 2:3-13",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 11–12 e 1 Timóteo 3, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Isa?as 8-9 e 2 Tessalonicenses 2:3-13 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-07-29",
-    "oldTestament": "Isaías 13–14",
+    "oldTestament": "Isa?as 10-11",
     "wisdom": "",
-    "newTestament": "1 Timóteo 4",
+    "newTestament": "2 Tessalonicenses 2:14-3:6",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 13–14 e 1 Timóteo 4 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Isa?as 10-11 e 2 Tessalonicenses 2:14-3:6 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-07-30",
-    "oldTestament": "Isaías 15–16",
+    "oldTestament": "Isa?as 12-13",
     "wisdom": "",
-    "newTestament": "1 Timóteo 5",
+    "newTestament": "2 Tessalonicenses 3:7-16",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 15–16 e 1 Timóteo 5 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Isa?as 12-13 e 2 Tessalonicenses 3:7-16 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-07-31",
-    "oldTestament": "Isaías 17–18",
+    "oldTestament": "Isa?as 14",
     "wisdom": "",
-    "newTestament": "1 Timóteo 6",
+    "newTestament": "2 Tessalonicenses 3:17-18 + 1 Tim?teo 1:1-9",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 17–18 e 1 Timóteo 6, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Isa?as 14 e 2 Tessalonicenses 3:17-18 + 1 Tim?teo 1:1-9, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-08-01",
-    "oldTestament": "Isaías 19–20",
+    "oldTestament": "Isa?as 15-16",
     "wisdom": "",
-    "newTestament": "2 Timóteo 1",
+    "newTestament": "1 Tim?teo 1:10-19",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 19–20 e 2 Timóteo 1 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Isa?as 15-16 e 1 Tim?teo 1:10-19 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-08-02",
-    "oldTestament": "Isaías 21–22",
+    "oldTestament": "Isa?as 17-18",
     "wisdom": "",
-    "newTestament": "2 Timóteo 2",
+    "newTestament": "1 Tim?teo 1:20-2:9",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 21–22 e 2 Timóteo 2 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Isa?as 17-18 e 1 Tim?teo 1:20-2:9 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-08-03",
-    "oldTestament": "Isaías 23–24",
+    "oldTestament": "Isa?as 19-20",
     "wisdom": "",
-    "newTestament": "2 Timóteo 3",
+    "newTestament": "1 Tim?teo 2:10-3:5",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 23–24 e 2 Timóteo 3, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Isa?as 19-20 e 1 Tim?teo 2:10-3:5 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-08-04",
-    "oldTestament": "Isaías 25–26",
+    "oldTestament": "Isa?as 21",
     "wisdom": "",
-    "newTestament": "2 Timóteo 4",
+    "newTestament": "1 Tim?teo 3:6-15",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 25–26 e 2 Timóteo 4 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Isa?as 21 e 1 Tim?teo 3:6-15, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-08-05",
-    "oldTestament": "Isaías 27–28",
+    "oldTestament": "Isa?as 22-23",
     "wisdom": "",
-    "newTestament": "Tito",
+    "newTestament": "1 Tim?teo 3:16-4:10",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 27–28 e Tito destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Isa?as 22-23 e 1 Tim?teo 3:16-4:10 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-08-06",
-    "oldTestament": "Isaías 29–30",
+    "oldTestament": "Isa?as 24-25",
     "wisdom": "",
-    "newTestament": "Filemom",
+    "newTestament": "1 Tim?teo 4:11-5:4",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 29–30 e Filemom, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Isa?as 24-25 e 1 Tim?teo 4:11-5:4 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-08-07",
-    "oldTestament": "Isaías 31–32",
+    "oldTestament": "Isa?as 26-27",
     "wisdom": "",
-    "newTestament": "Hebreus 1",
+    "newTestament": "1 Tim?teo 5:5-14",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 31–32 e Hebreus 1 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Isa?as 26-27 e 1 Tim?teo 5:5-14 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-08-08",
-    "oldTestament": "Isaías 33–34",
+    "oldTestament": "Isa?as 28",
     "wisdom": "",
-    "newTestament": "Hebreus 2",
+    "newTestament": "1 Tim?teo 5:15-25",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 33–34 e Hebreus 2 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Isa?as 28 e 1 Tim?teo 5:15-25, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-08-09",
-    "oldTestament": "Isaías 35–36",
+    "oldTestament": "Isa?as 29-30",
     "wisdom": "",
-    "newTestament": "Hebreus 3",
+    "newTestament": "1 Tim?teo 6:1-10",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 35–36 e Hebreus 3, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Isa?as 29-30 e 1 Tim?teo 6:1-10 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-08-10",
-    "oldTestament": "Isaías 37–38",
+    "oldTestament": "Isa?as 31-32",
     "wisdom": "",
-    "newTestament": "Hebreus 4:1–13",
+    "newTestament": "1 Tim?teo 6:11-20",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 37–38 e Hebreus 4:1–13 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Isa?as 31-32 e 1 Tim?teo 6:11-20 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-08-11",
-    "oldTestament": "Isaías 39–40",
+    "oldTestament": "Isa?as 33-34",
     "wisdom": "",
-    "newTestament": "Hebreus 4:14–16 + 5:1–10",
+    "newTestament": "1 Tim?teo 6:21 + 2 Tim?teo 1:1-10",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 39–40 e Hebreus 4:14–16 + 5:1–10 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Isa?as 33-34 e 1 Tim?teo 6:21 + 2 Tim?teo 1:1-10 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-08-12",
-    "oldTestament": "Isaías 41–42",
+    "oldTestament": "Isa?as 35",
     "wisdom": "",
-    "newTestament": "Hebreus 5:11–14 + 6:1–12",
+    "newTestament": "2 Tim?teo 1:11-2:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 41–42 e Hebreus 5:11–14 + 6:1–12, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Isa?as 35 e 2 Tim?teo 1:11-2:2, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-08-13",
-    "oldTestament": "Isaías 43–44",
+    "oldTestament": "Isa?as 36-37",
     "wisdom": "",
-    "newTestament": "Hebreus 6:13–20 + 7:1–10",
+    "newTestament": "2 Tim?teo 2:3-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 43–44 e Hebreus 6:13–20 + 7:1–10 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Isa?as 36-37 e 2 Tim?teo 2:3-12 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-08-14",
-    "oldTestament": "Isaías 45–46",
+    "oldTestament": "Isa?as 38-39",
     "wisdom": "",
-    "newTestament": "Hebreus 7:11–28",
+    "newTestament": "2 Tim?teo 2:13-23",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 45–46 e Hebreus 7:11–28 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Isa?as 38-39 e 2 Tim?teo 2:13-23 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-08-15",
-    "oldTestament": "Isaías 47–48",
+    "oldTestament": "Isa?as 40-41",
     "wisdom": "",
-    "newTestament": "Hebreus 8",
+    "newTestament": "2 Tim?teo 2:24-3:7",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 47–48 e Hebreus 8, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Isa?as 40-41 e 2 Tim?teo 2:24-3:7 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-08-16",
-    "oldTestament": "Isaías 49–50",
+    "oldTestament": "Isa?as 42",
     "wisdom": "",
-    "newTestament": "Hebreus 9:1–14",
+    "newTestament": "2 Tim?teo 3:8-17",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 49–50 e Hebreus 9:1–14 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Isa?as 42 e 2 Tim?teo 3:8-17, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-08-17",
-    "oldTestament": "Isaías 51–52",
+    "oldTestament": "Isa?as 43-44",
     "wisdom": "",
-    "newTestament": "Hebreus 9:15–28",
+    "newTestament": "2 Tim?teo 4:1-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 51–52 e Hebreus 9:15–28 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Isa?as 43-44 e 2 Tim?teo 4:1-11 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-08-18",
-    "oldTestament": "Isaías 53–54",
+    "oldTestament": "Isa?as 45-46",
     "wisdom": "",
-    "newTestament": "Hebreus 10:1–18",
+    "newTestament": "2 Tim?teo 4:12-21",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 53–54 e Hebreus 10:1–18, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Isa?as 45-46 e 2 Tim?teo 4:12-21 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-08-19",
-    "oldTestament": "Isaías 55–56",
+    "oldTestament": "Isa?as 47-48",
     "wisdom": "",
-    "newTestament": "Hebreus 10:19–39",
+    "newTestament": "2 Tim?teo 4:22 + Tito 1:1-9",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 55–56 e Hebreus 10:19–39 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Isa?as 47-48 e 2 Tim?teo 4:22 + Tito 1:1-9 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-08-20",
-    "oldTestament": "Isaías 57–58",
+    "oldTestament": "Isa?as 49",
     "wisdom": "",
-    "newTestament": "Hebreus 11:1–22",
+    "newTestament": "Tito 1:10-2:4",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 57–58 e Hebreus 11:1–22 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Isa?as 49 e Tito 1:10-2:4, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-08-21",
-    "oldTestament": "Isaías 59–60",
+    "oldTestament": "Isa?as 50-51",
     "wisdom": "",
-    "newTestament": "Hebreus 11:23–40",
+    "newTestament": "Tito 2:5-14",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 59–60 e Hebreus 11:23–40, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Isa?as 50-51 e Tito 2:5-14 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-08-22",
-    "oldTestament": "Isaías 61–62",
+    "oldTestament": "Isa?as 52-53",
     "wisdom": "",
-    "newTestament": "Hebreus 12:1–13",
+    "newTestament": "Tito 2:15-3:9",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Isaías 61–62 e Hebreus 12:1–13 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Isa?as 52-53 e Tito 2:15-3:9 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-08-23",
-    "oldTestament": "Isaías 63–64",
+    "oldTestament": "Isa?as 54-55",
     "wisdom": "",
-    "newTestament": "Hebreus 12:14–29",
+    "newTestament": "Tito 3:10-15 + Filemom 1:1-5",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Isaías 63–64 e Hebreus 12:14–29 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Isa?as 54-55 e Tito 3:10-15 + Filemom 1:1-5 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-08-24",
-    "oldTestament": "Isaías 65–66",
+    "oldTestament": "Isa?as 56",
     "wisdom": "",
-    "newTestament": "Hebreus 13",
+    "newTestament": "Filemom 1:6-15",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Isaías 65–66 e Hebreus 13, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Isa?as 56 e Filemom 1:6-15, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-08-25",
-    "oldTestament": "Jeremias 1–2",
+    "oldTestament": "Isa?as 57-58",
     "wisdom": "",
-    "newTestament": "Tiago 1",
+    "newTestament": "Filemom 1:16-25",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jeremias 1–2 e Tiago 1 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Isa?as 57-58 e Filemom 1:16-25 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-08-26",
-    "oldTestament": "Jeremias 3–4",
+    "oldTestament": "Isa?as 59-60",
     "wisdom": "",
-    "newTestament": "Tiago 2",
+    "newTestament": "Hebreus 1:1-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jeremias 3–4 e Tiago 2 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Isa?as 59-60 e Hebreus 1:1-11 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-08-27",
-    "oldTestament": "Jeremias 5–6",
+    "oldTestament": "Isa?as 61-62",
     "wisdom": "",
-    "newTestament": "Tiago 3",
+    "newTestament": "Hebreus 1:12-2:7",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Jeremias 5–6 e Tiago 3, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Isa?as 61-62 e Hebreus 1:12-2:7 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-08-28",
-    "oldTestament": "Jeremias 7–8",
+    "oldTestament": "Isa?as 63",
     "wisdom": "",
-    "newTestament": "Tiago 4",
+    "newTestament": "Hebreus 2:8-17",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jeremias 7–8 e Tiago 4 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Isa?as 63 e Hebreus 2:8-17, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-08-29",
-    "oldTestament": "Jeremias 9–10",
+    "oldTestament": "Isa?as 64-65",
     "wisdom": "",
-    "newTestament": "Tiago 5",
+    "newTestament": "Hebreus 2:18-3:10",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jeremias 9–10 e Tiago 5 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Isa?as 64-65 e Hebreus 2:18-3:10 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-08-30",
-    "oldTestament": "Jeremias 11–12",
+    "oldTestament": "Isa?as 66 + Jeremias 1",
     "wisdom": "",
-    "newTestament": "1 Pedro 1:1–12",
+    "newTestament": "Hebreus 3:11-4:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Jeremias 11–12 e 1 Pedro 1:1–12, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Isa?as 66 + Jeremias 1 e Hebreus 3:11-4:1 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-08-31",
-    "oldTestament": "Jeremias 13–14",
+    "oldTestament": "Jeremias 2-3",
     "wisdom": "",
-    "newTestament": "1 Pedro 1:13–25",
+    "newTestament": "Hebreus 4:2-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jeremias 13–14 e 1 Pedro 1:13–25 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Jeremias 2-3 e Hebreus 4:2-11 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-09-01",
-    "oldTestament": "Jeremias 15–16",
+    "oldTestament": "Jeremias 4",
     "wisdom": "",
-    "newTestament": "1 Pedro 2",
+    "newTestament": "Hebreus 4:12-5:6",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jeremias 15–16 e 1 Pedro 2 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Jeremias 4 e Hebreus 4:12-5:6, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-09-02",
-    "oldTestament": "Jeremias 17–18",
+    "oldTestament": "Jeremias 5-6",
     "wisdom": "",
-    "newTestament": "1 Pedro 3",
+    "newTestament": "Hebreus 5:7-6:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Jeremias 17–18 e 1 Pedro 3, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Jeremias 5-6 e Hebreus 5:7-6:2 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-09-03",
-    "oldTestament": "Jeremias 19–20",
+    "oldTestament": "Jeremias 7-8",
     "wisdom": "",
-    "newTestament": "1 Pedro 4",
+    "newTestament": "Hebreus 6:3-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jeremias 19–20 e 1 Pedro 4 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Jeremias 7-8 e Hebreus 6:3-12 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-09-04",
-    "oldTestament": "Jeremias 21–22",
+    "oldTestament": "Jeremias 9-10",
     "wisdom": "",
-    "newTestament": "1 Pedro 5",
+    "newTestament": "Hebreus 6:13-7:3",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jeremias 21–22 e 1 Pedro 5 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Jeremias 9-10 e Hebreus 6:13-7:3 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-09-05",
-    "oldTestament": "Jeremias 23–24",
+    "oldTestament": "Jeremias 11",
     "wisdom": "",
-    "newTestament": "2 Pedro 1",
+    "newTestament": "Hebreus 7:4-13",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Jeremias 23–24 e 2 Pedro 1, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Jeremias 11 e Hebreus 7:4-13, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-09-06",
-    "oldTestament": "Jeremias 25–26",
+    "oldTestament": "Jeremias 12-13",
     "wisdom": "",
-    "newTestament": "2 Pedro 2",
+    "newTestament": "Hebreus 7:14-23",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jeremias 25–26 e 2 Pedro 2 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Jeremias 12-13 e Hebreus 7:14-23 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-09-07",
-    "oldTestament": "Jeremias 27–28",
+    "oldTestament": "Jeremias 14-15",
     "wisdom": "",
-    "newTestament": "2 Pedro 3",
+    "newTestament": "Hebreus 7:24-8:6",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jeremias 27–28 e 2 Pedro 3 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Jeremias 14-15 e Hebreus 7:24-8:6 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-09-08",
-    "oldTestament": "Jeremias 29–30",
+    "oldTestament": "Jeremias 16",
     "wisdom": "",
-    "newTestament": "1 João 1",
+    "newTestament": "Hebreus 8:7-9:3",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Jeremias 29–30 e 1 João 1, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Jeremias 16 e Hebreus 8:7-9:3 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-09-09",
-    "oldTestament": "Jeremias 31–32",
+    "oldTestament": "Jeremias 17-18",
     "wisdom": "",
-    "newTestament": "1 João 2:1–17",
+    "newTestament": "Hebreus 9:4-13",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jeremias 31–32 e 1 João 2:1–17 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Jeremias 17-18 e Hebreus 9:4-13, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-09-10",
-    "oldTestament": "Jeremias 33–34",
+    "oldTestament": "Jeremias 19-20",
     "wisdom": "",
-    "newTestament": "1 João 2:18–29",
+    "newTestament": "Hebreus 9:14-24",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jeremias 33–34 e 1 João 2:18–29 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Jeremias 19-20 e Hebreus 9:14-24 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-09-11",
-    "oldTestament": "Jeremias 35–36",
+    "oldTestament": "Jeremias 21-22",
     "wisdom": "",
-    "newTestament": "1 João 3",
+    "newTestament": "Hebreus 9:25-10:6",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Jeremias 35–36 e 1 João 3, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Jeremias 21-22 e Hebreus 9:25-10:6 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-09-12",
-    "oldTestament": "Jeremias 37–38",
+    "oldTestament": "Jeremias 23",
     "wisdom": "",
-    "newTestament": "1 João 4",
+    "newTestament": "Hebreus 10:7-17",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jeremias 37–38 e 1 João 4 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Jeremias 23 e Hebreus 10:7-17 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-09-13",
-    "oldTestament": "Jeremias 39–40",
+    "oldTestament": "Jeremias 24-25",
     "wisdom": "",
-    "newTestament": "1 João 5",
+    "newTestament": "Hebreus 10:18-27",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jeremias 39–40 e 1 João 5 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Jeremias 24-25 e Hebreus 10:18-27, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-09-14",
-    "oldTestament": "Jeremias 41–42",
+    "oldTestament": "Jeremias 26-27",
     "wisdom": "",
-    "newTestament": "2 João",
+    "newTestament": "Hebreus 10:28-37",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Jeremias 41–42 e 2 João, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Jeremias 26-27 e Hebreus 10:28-37 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-09-15",
-    "oldTestament": "Jeremias 43–44",
+    "oldTestament": "Jeremias 28-29",
     "wisdom": "",
-    "newTestament": "3 João",
+    "newTestament": "Hebreus 10:38-11:9",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jeremias 43–44 e 3 João nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Jeremias 28-29 e Hebreus 10:38-11:9 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-09-16",
-    "oldTestament": "Jeremias 45–46",
+    "oldTestament": "Jeremias 30",
     "wisdom": "",
-    "newTestament": "Judas",
+    "newTestament": "Hebreus 11:10-19",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jeremias 45–46 e Judas destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Jeremias 30 e Hebreus 11:10-19 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-09-17",
-    "oldTestament": "Jeremias 47–48",
+    "oldTestament": "Jeremias 31-32",
     "wisdom": "",
-    "newTestament": "Apocalipse 1",
+    "newTestament": "Hebreus 11:20-29",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Jeremias 47–48 e Apocalipse 1, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Jeremias 31-32 e Hebreus 11:20-29, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-09-18",
-    "oldTestament": "Jeremias 49–50",
+    "oldTestament": "Jeremias 33-34",
     "wisdom": "",
-    "newTestament": "Apocalipse 2",
+    "newTestament": "Hebreus 11:30-40",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jeremias 49–50 e Apocalipse 2 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Jeremias 33-34 e Hebreus 11:30-40 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-09-19",
-    "oldTestament": "Jeremias 51–52",
+    "oldTestament": "Jeremias 35-36",
     "wisdom": "",
-    "newTestament": "Apocalipse 3",
+    "newTestament": "Hebreus 12:1-10",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jeremias 51–52 e Apocalipse 3 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Jeremias 35-36 e Hebreus 12:1-10 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-09-20",
-    "oldTestament": "Lamentações 1–2",
+    "oldTestament": "Jeremias 37",
     "wisdom": "",
-    "newTestament": "Apocalipse 4",
+    "newTestament": "Hebreus 12:11-20",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Lamentações 1–2 e Apocalipse 4, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Jeremias 37 e Hebreus 12:11-20 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-09-21",
-    "oldTestament": "Lamentações 3–5",
+    "oldTestament": "Jeremias 38-39",
     "wisdom": "",
-    "newTestament": "Apocalipse 5",
+    "newTestament": "Hebreus 12:21-13:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Lamentações 3–5 e Apocalipse 5 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Jeremias 38-39 e Hebreus 12:21-13:2, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-09-22",
-    "oldTestament": "Ezequiel 1–2",
+    "oldTestament": "Jeremias 40-41",
     "wisdom": "",
-    "newTestament": "Apocalipse 6",
+    "newTestament": "Hebreus 13:3-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Ezequiel 1–2 e Apocalipse 6 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Jeremias 40-41 e Hebreus 13:3-12 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-09-23",
-    "oldTestament": "Ezequiel 3–4",
+    "oldTestament": "Jeremias 42-43",
     "wisdom": "",
-    "newTestament": "Apocalipse 7",
+    "newTestament": "Hebreus 13:13-22",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Ezequiel 3–4 e Apocalipse 7, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Jeremias 42-43 e Hebreus 13:13-22 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-09-24",
-    "oldTestament": "Ezequiel 5–6",
+    "oldTestament": "Jeremias 44",
     "wisdom": "",
-    "newTestament": "Apocalipse 8",
+    "newTestament": "Hebreus 13:23-25 + Tiago 1:1-8",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Ezequiel 5–6 e Apocalipse 8 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Jeremias 44 e Hebreus 13:23-25 + Tiago 1:1-8 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-09-25",
-    "oldTestament": "Ezequiel 7–8",
+    "oldTestament": "Jeremias 45-46",
     "wisdom": "",
-    "newTestament": "Apocalipse 9",
+    "newTestament": "Tiago 1:9-18",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Ezequiel 7–8 e Apocalipse 9 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Jeremias 45-46 e Tiago 1:9-18, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-09-26",
-    "oldTestament": "Ezequiel 9–10",
+    "oldTestament": "Jeremias 47-48",
     "wisdom": "",
-    "newTestament": "Apocalipse 10",
+    "newTestament": "Tiago 1:19-2:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Ezequiel 9–10 e Apocalipse 10, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Jeremias 47-48 e Tiago 1:19-2:1 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-09-27",
-    "oldTestament": "Ezequiel 11–12",
+    "oldTestament": "Jeremias 49-50",
     "wisdom": "",
-    "newTestament": "Apocalipse 11",
+    "newTestament": "Tiago 2:2-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Ezequiel 11–12 e Apocalipse 11 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Jeremias 49-50 e Tiago 2:2-12 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-09-28",
-    "oldTestament": "Ezequiel 13–14",
+    "oldTestament": "Jeremias 51",
     "wisdom": "",
-    "newTestament": "Apocalipse 12",
+    "newTestament": "Tiago 2:13-22",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Ezequiel 13–14 e Apocalipse 12 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Jeremias 51 e Tiago 2:13-22 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-09-29",
-    "oldTestament": "Ezequiel 15–16",
+    "oldTestament": "Jeremias 52 + Lamenta??es 1",
     "wisdom": "",
-    "newTestament": "Apocalipse 13",
+    "newTestament": "Tiago 2:23-3:6",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Ezequiel 15–16 e Apocalipse 13, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Jeremias 52 + Lamenta??es 1 e Tiago 2:23-3:6, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-09-30",
-    "oldTestament": "Ezequiel 17–18",
+    "oldTestament": "Lamenta??es 2-3",
     "wisdom": "",
-    "newTestament": "Apocalipse 14",
+    "newTestament": "Tiago 3:7-17",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Ezequiel 17–18 e Apocalipse 14 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Lamenta??es 2-3 e Tiago 3:7-17 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-10-01",
-    "oldTestament": "Ezequiel 19–20",
+    "oldTestament": "Lamenta??es 4-5",
     "wisdom": "",
-    "newTestament": "Apocalipse 15",
+    "newTestament": "Tiago 3:18-4:9",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Ezequiel 19–20 e Apocalipse 15 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Lamenta??es 4-5 e Tiago 3:18-4:9 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-10-02",
-    "oldTestament": "Ezequiel 21–22",
+    "oldTestament": "Ezequiel 1",
     "wisdom": "",
-    "newTestament": "Apocalipse 16",
+    "newTestament": "Tiago 4:10-5:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Ezequiel 21–22 e Apocalipse 16, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Ezequiel 1 e Tiago 4:10-5:2 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-10-03",
-    "oldTestament": "Ezequiel 23–24",
+    "oldTestament": "Ezequiel 2-3",
     "wisdom": "",
-    "newTestament": "Apocalipse 17",
+    "newTestament": "Tiago 5:3-13",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Ezequiel 23–24 e Apocalipse 17 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Ezequiel 2-3 e Tiago 5:3-13, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-10-04",
-    "oldTestament": "Ezequiel 25–26",
+    "oldTestament": "Ezequiel 4-5",
     "wisdom": "",
-    "newTestament": "Apocalipse 18",
+    "newTestament": "Tiago 5:14-20 + 1 Pedro 1:1-3",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Ezequiel 25–26 e Apocalipse 18 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Ezequiel 4-5 e Tiago 5:14-20 + 1 Pedro 1:1-3 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-10-05",
-    "oldTestament": "Ezequiel 27–28",
+    "oldTestament": "Ezequiel 6-7",
     "wisdom": "",
-    "newTestament": "Apocalipse 19",
+    "newTestament": "1 Pedro 1:4-13",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Ezequiel 27–28 e Apocalipse 19, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Ezequiel 6-7 e 1 Pedro 1:4-13 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-10-06",
-    "oldTestament": "Ezequiel 29–30",
+    "oldTestament": "Ezequiel 8",
     "wisdom": "",
-    "newTestament": "Apocalipse 20",
+    "newTestament": "1 Pedro 1:14-24",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Ezequiel 29–30 e Apocalipse 20 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Ezequiel 8 e 1 Pedro 1:14-24 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-10-07",
-    "oldTestament": "Ezequiel 31–32",
+    "oldTestament": "Ezequiel 9-10",
     "wisdom": "",
-    "newTestament": "Apocalipse 21",
+    "newTestament": "1 Pedro 1:25-2:9",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Ezequiel 31–32 e Apocalipse 21 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Ezequiel 9-10 e 1 Pedro 1:25-2:9, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-10-08",
-    "oldTestament": "Ezequiel 33–34",
+    "oldTestament": "Ezequiel 11-12",
     "wisdom": "",
-    "newTestament": "Apocalipse 22",
+    "newTestament": "1 Pedro 2:10-19",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Ezequiel 33–34 e Apocalipse 22, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Ezequiel 11-12 e 1 Pedro 2:10-19 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-10-09",
-    "oldTestament": "Ezequiel 35–36",
+    "oldTestament": "Ezequiel 13-14",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Pedro 2:20-3:5",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Ezequiel 35–36 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Ezequiel 13-14 e 1 Pedro 2:20-3:5 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-10-10",
-    "oldTestament": "Ezequiel 37–38",
+    "oldTestament": "Ezequiel 15",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Pedro 3:6-15",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Ezequiel 37–38 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Ezequiel 15 e 1 Pedro 3:6-15 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-10-11",
-    "oldTestament": "Ezequiel 39–40",
+    "oldTestament": "Ezequiel 16-17",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Pedro 3:16-4:3",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Ezequiel 39–40, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Ezequiel 16-17 e 1 Pedro 3:16-4:3, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-10-12",
-    "oldTestament": "Ezequiel 41–42",
+    "oldTestament": "Ezequiel 18-19",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Pedro 4:4-14",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Ezequiel 41–42 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Ezequiel 18-19 e 1 Pedro 4:4-14 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-10-13",
-    "oldTestament": "Ezequiel 43–44",
+    "oldTestament": "Ezequiel 20-21",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Pedro 4:15-5:5",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Ezequiel 43–44 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Ezequiel 20-21 e 1 Pedro 4:15-5:5 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-10-14",
-    "oldTestament": "Ezequiel 45–46",
+    "oldTestament": "Ezequiel 22",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Pedro 5:6-14 + 2 Pedro 1:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Ezequiel 45–46, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Ezequiel 22 e 1 Pedro 5:6-14 + 2 Pedro 1:1 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-10-15",
-    "oldTestament": "Ezequiel 47–48",
+    "oldTestament": "Ezequiel 23-24",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "2 Pedro 1:2-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Ezequiel 47–48 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Ezequiel 23-24 e 2 Pedro 1:2-12, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-10-16",
-    "oldTestament": "Daniel 1–2",
+    "oldTestament": "Ezequiel 25-26",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "2 Pedro 1:13-2:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Daniel 1–2 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Ezequiel 25-26 e 2 Pedro 1:13-2:1 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-10-17",
-    "oldTestament": "Daniel 3–4",
+    "oldTestament": "Ezequiel 27-28",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "2 Pedro 2:2-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Daniel 3–4, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Ezequiel 27-28 e 2 Pedro 2:2-11 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-10-18",
-    "oldTestament": "Daniel 5–6",
+    "oldTestament": "Ezequiel 29",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "2 Pedro 2:12-22",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Daniel 5–6 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Ezequiel 29 e 2 Pedro 2:12-22 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-10-19",
-    "oldTestament": "Daniel 7–8",
+    "oldTestament": "Ezequiel 30-31",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "2 Pedro 3:1-10",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Daniel 7–8 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Ezequiel 30-31 e 2 Pedro 3:1-10, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-10-20",
-    "oldTestament": "Daniel 9–10",
+    "oldTestament": "Ezequiel 32-33",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "2 Pedro 3:11-18 + 1 Jo?o 1:1-3",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Daniel 9–10, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Ezequiel 32-33 e 2 Pedro 3:11-18 + 1 Jo?o 1:1-3 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-10-21",
-    "oldTestament": "Daniel 11–12",
+    "oldTestament": "Ezequiel 34-35",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Jo?o 1:4-2:3",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Daniel 11–12 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Ezequiel 34-35 e 1 Jo?o 1:4-2:3 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-10-22",
-    "oldTestament": "Oséias 1–2",
+    "oldTestament": "Ezequiel 36",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Jo?o 2:4-13",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Oséias 1–2 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Ezequiel 36 e 1 Jo?o 2:4-13 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-10-23",
-    "oldTestament": "Oséias 3–4",
+    "oldTestament": "Ezequiel 37-38",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Jo?o 2:14-24",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Oséias 3–4, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Ezequiel 37-38 e 1 Jo?o 2:14-24, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-10-24",
-    "oldTestament": "Oséias 5–6",
+    "oldTestament": "Ezequiel 39-40",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Jo?o 2:25-3:5",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Oséias 5–6 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Ezequiel 39-40 e 1 Jo?o 2:25-3:5 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-10-25",
-    "oldTestament": "Oséias 7–8",
+    "oldTestament": "Ezequiel 41",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Jo?o 3:6-15",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Oséias 7–8 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Ezequiel 41 e 1 Jo?o 3:6-15 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-10-26",
-    "oldTestament": "Oséias 9–10",
+    "oldTestament": "Ezequiel 42-43",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Jo?o 3:16-4:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Oséias 9–10, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Ezequiel 42-43 e 1 Jo?o 3:16-4:2 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-10-27",
-    "oldTestament": "Oséias 11–12",
+    "oldTestament": "Ezequiel 44-45",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Jo?o 4:3-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Oséias 11–12 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Ezequiel 44-45 e 1 Jo?o 4:3-12, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-10-28",
-    "oldTestament": "Oséias 13–14",
+    "oldTestament": "Ezequiel 46-47",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Jo?o 4:13-5:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Oséias 13–14 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Ezequiel 46-47 e 1 Jo?o 4:13-5:1 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-10-29",
-    "oldTestament": "Joel 1–2",
+    "oldTestament": "Ezequiel 48",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Jo?o 5:2-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Joel 1–2, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Ezequiel 48 e 1 Jo?o 5:2-12 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-10-30",
-    "oldTestament": "Joel 3",
+    "oldTestament": "Daniel 1-2",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "1 Jo?o 5:13-21 + 2 Jo?o 1:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Joel 3 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Daniel 1-2 e 1 Jo?o 5:13-21 + 2 Jo?o 1:1 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-10-31",
-    "oldTestament": "Amós 1–2",
+    "oldTestament": "Daniel 3-4",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "2 Jo?o 1:2-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Amós 1–2 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Daniel 3-4 e 2 Jo?o 1:2-11, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-11-01",
-    "oldTestament": "Amós 3–4",
+    "oldTestament": "Daniel 5-6",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "2 Jo?o 1:12-13 + 3 Jo?o 1:1-9",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Amós 3–4, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Daniel 5-6 e 2 Jo?o 1:12-13 + 3 Jo?o 1:1-9 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-11-02",
-    "oldTestament": "Amós 5–6",
+    "oldTestament": "Daniel 7",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "3 Jo?o 1:10-14 + Judas 1:1-5",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Amós 5–6 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Daniel 7 e 3 Jo?o 1:10-14 + Judas 1:1-5 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-11-03",
-    "oldTestament": "Amós 7–9",
+    "oldTestament": "Daniel 8-9",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Judas 1:6-15",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Amós 7–9 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Daniel 8-9 e Judas 1:6-15 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-11-04",
-    "oldTestament": "Obadias",
+    "oldTestament": "Daniel 10-11",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Judas 1:16-25 + Apocalipse 1:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Obadias, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Daniel 10-11 e Judas 1:16-25 + Apocalipse 1:1, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-11-05",
-    "oldTestament": "Jonas 1–2",
+    "oldTestament": "Daniel 12 + Oseias 1",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 1:2-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jonas 1–2 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Daniel 12 + Oseias 1 e Apocalipse 1:2-11 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-11-06",
-    "oldTestament": "Jonas 3–4",
+    "oldTestament": "Oseias 2",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 1:12-2:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jonas 3–4 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Oseias 2 e Apocalipse 1:12-2:1 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-11-07",
-    "oldTestament": "Miqueias 1–2",
+    "oldTestament": "Oseias 3-4",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 2:2-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Miqueias 1–2, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Oseias 3-4 e Apocalipse 2:2-12 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-11-08",
-    "oldTestament": "Miqueias 3–4",
+    "oldTestament": "Oseias 5-6",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 2:13-22",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Miqueias 3–4 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Oseias 5-6 e Apocalipse 2:13-22, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-11-09",
-    "oldTestament": "Miqueias 5–7",
+    "oldTestament": "Oseias 7-8",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 2:23-3:3",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Miqueias 5–7 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Oseias 7-8 e Apocalipse 2:23-3:3 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-11-10",
-    "oldTestament": "Naum 1–3",
+    "oldTestament": "Oseias 9",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 3:4-14",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Naum 1–3, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Oseias 9 e Apocalipse 3:4-14 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-11-11",
-    "oldTestament": "Habacuque 1–3",
+    "oldTestament": "Oseias 10-11",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 3:15-4:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Habacuque 1–3 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Oseias 10-11 e Apocalipse 3:15-4:2 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-11-12",
-    "oldTestament": "Sofonias 1–3",
+    "oldTestament": "Oseias 12-13",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 4:3-5:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Sofonias 1–3 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Oseias 12-13 e Apocalipse 4:3-5:1, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-11-13",
-    "oldTestament": "Ageu 1–2",
+    "oldTestament": "Oseias 14 + Joel 1",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 5:2-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Ageu 1–2, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Oseias 14 + Joel 1 e Apocalipse 5:2-12 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-11-14",
-    "oldTestament": "Zacarias 1–2",
+    "oldTestament": "Joel 2",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 5:13-6:8",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Zacarias 1–2 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Joel 2 e Apocalipse 5:13-6:8 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-11-15",
-    "oldTestament": "Zacarias 3–4",
+    "oldTestament": "Joel 3 + Am?s 1",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 6:9-7:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Zacarias 3–4 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Joel 3 + Am?s 1 e Apocalipse 6:9-7:1 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-11-16",
-    "oldTestament": "Zacarias 5–6",
+    "oldTestament": "Am?s 2-3",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 7:2-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Zacarias 5–6, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Am?s 2-3 e Apocalipse 7:2-12, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-11-17",
-    "oldTestament": "Zacarias 7–8",
+    "oldTestament": "Am?s 4-5",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 7:13-8:5",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Zacarias 7–8 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Am?s 4-5 e Apocalipse 7:13-8:5 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-11-18",
-    "oldTestament": "Zacarias 9–10",
+    "oldTestament": "Am?s 6",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 8:6-9:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Zacarias 9–10 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Am?s 6 e Apocalipse 8:6-9:2 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-11-19",
-    "oldTestament": "Zacarias 11–12",
+    "oldTestament": "Am?s 7-8",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 9:3-13",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Zacarias 11–12, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Am?s 7-8 e Apocalipse 9:3-13 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-11-20",
-    "oldTestament": "Zacarias 13–14",
+    "oldTestament": "Am?s 9 + Obadias 1",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 9:14-10:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Zacarias 13–14 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Am?s 9 + Obadias 1 e Apocalipse 9:14-10:2, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-11-21",
-    "oldTestament": "Malaquias 1",
+    "oldTestament": "Jonas 1-2",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 10:3-11:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Malaquias 1 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Jonas 1-2 e Apocalipse 10:3-11:1 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-11-22",
-    "oldTestament": "Malaquias 2",
+    "oldTestament": "Jonas 3",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 11:2-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Malaquias 2, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Jonas 3 e Apocalipse 11:2-12 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-11-23",
-    "oldTestament": "Malaquias 3:1–6",
+    "oldTestament": "Jonas 4 + Miqueias 1",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 11:13-12:3",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Malaquias 3:1–6 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Jonas 4 + Miqueias 1 e Apocalipse 11:13-12:3 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-11-24",
-    "oldTestament": "Malaquias 3:7–12",
+    "oldTestament": "Miqueias 2-3",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 12:4-13",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Malaquias 3:7–12 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Miqueias 2-3 e Apocalipse 12:4-13, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-11-25",
-    "oldTestament": "Malaquias 3:13–18",
+    "oldTestament": "Miqueias 4-5",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 12:14-13:7",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Malaquias 3:13–18, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Miqueias 4-5 e Apocalipse 12:14-13:7 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-11-26",
-    "oldTestament": "Malaquias 4:1–3",
+    "oldTestament": "Miqueias 6",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 13:8-17",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Malaquias 4:1–3 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Miqueias 6 e Apocalipse 13:8-17 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-11-27",
-    "oldTestament": "Zacarias 9–10",
+    "oldTestament": "Miqueias 7 + Naum 1",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 13:18-14:10",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Zacarias 9–10 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Miqueias 7 + Naum 1 e Apocalipse 13:18-14:10 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-11-28",
-    "oldTestament": "Zacarias 11–12",
+    "oldTestament": "Naum 2-3",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 14:11-20",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Zacarias 11–12, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Naum 2-3 e Apocalipse 14:11-20, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-11-29",
-    "oldTestament": "Zacarias 13–14",
+    "oldTestament": "Habacuque 1-2",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 15:1-16:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Zacarias 13–14 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Habacuque 1-2 e Apocalipse 15:1-16:2 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-11-30",
-    "oldTestament": "Ageu 1–2",
+    "oldTestament": "Habacuque 3",
     "wisdom": "",
-    "newTestament": "",
+    "newTestament": "Apocalipse 16:3-13",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Ageu 1–2 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Habacuque 3 e Apocalipse 16:3-13 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-12-01",
-    "oldTestament": "Obadias 1",
+    "oldTestament": "Sofonias 1-2",
     "wisdom": "",
-    "newTestament": "Lucas 19 · João 12",
+    "newTestament": "Apocalipse 16:14-17:2",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Obadias 1 e Lucas 19 · João 12, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Sofonias 1-2 e Apocalipse 16:14-17:2 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-12-02",
-    "oldTestament": "Jonas 1–2",
+    "oldTestament": "Sofonias 3 + Ageu 1",
     "wisdom": "",
-    "newTestament": "Mateus 21",
+    "newTestament": "Apocalipse 17:3-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Jonas 1–2 e Mateus 21 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "Em Sofonias 3 + Ageu 1 e Apocalipse 17:3-12, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-12-03",
-    "oldTestament": "Jonas 3–4",
+    "oldTestament": "Ageu 2 + Zacarias 1",
     "wisdom": "",
-    "newTestament": "Marcos 11",
+    "newTestament": "Apocalipse 17:13-18:5",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Jonas 3–4 e Marcos 11 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "Ageu 2 + Zacarias 1 e Apocalipse 17:13-18:5 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-12-04",
-    "oldTestament": "Miqueias 1–2",
+    "oldTestament": "Zacarias 2",
     "wisdom": "",
-    "newTestament": "Mateus 22",
+    "newTestament": "Apocalipse 18:6-15",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Miqueias 1–2 e Mateus 22, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "As leituras de Zacarias 2 e Apocalipse 18:6-15 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-12-05",
-    "oldTestament": "Miqueias 3–4",
+    "oldTestament": "Zacarias 3-4",
     "wisdom": "",
-    "newTestament": "Mateus 23",
+    "newTestament": "Apocalipse 18:16-19:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Miqueias 3–4 e Mateus 23 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "As leituras de Zacarias 3-4 e Apocalipse 18:16-19:1 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-12-06",
-    "oldTestament": "Miqueias 5–7",
+    "oldTestament": "Zacarias 5-6",
     "wisdom": "",
-    "newTestament": "Mateus 24",
+    "newTestament": "Apocalipse 19:2-12",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Miqueias 5–7 e Mateus 24 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "Em Zacarias 5-6 e Apocalipse 19:2-12, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-12-07",
-    "oldTestament": "Naum 1–3",
+    "oldTestament": "Zacarias 7-8",
     "wisdom": "",
-    "newTestament": "Mateus 25",
+    "newTestament": "Apocalipse 19:13-20:1",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Naum 1–3 e Mateus 25, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "Zacarias 7-8 e Apocalipse 19:13-20:1 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-12-08",
-    "oldTestament": "Habacuque 1–3",
+    "oldTestament": "Zacarias 9",
     "wisdom": "",
-    "newTestament": "Marcos 14",
+    "newTestament": "Apocalipse 20:2-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Habacuque 1–3 e Marcos 14 nos ajudam a enxergar o agir de Deus na história e a renovar nossa confiança nele a cada dia."
+    "message": "As leituras de Zacarias 9 e Apocalipse 20:2-11 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-12-09",
-    "oldTestament": "Sofonias 1–3",
+    "oldTestament": "Zacarias 10-11",
     "wisdom": "",
-    "newTestament": "João 13",
+    "newTestament": "Apocalipse 20:12-21:7",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Sofonias 1–3 e João 13 destacam a fidelidade de Deus e nos chamam a responder com fé, obediência e esperança em Cristo."
+    "message": "As leituras de Zacarias 10-11 e Apocalipse 20:12-21:7 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   },
   {
     "date": "2026-12-10",
-    "oldTestament": "Ageu 1–2",
+    "oldTestament": "Zacarias 12-13",
     "wisdom": "",
-    "newTestament": "João 14",
+    "newTestament": "Apocalipse 21:8-17",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Ageu 1–2 e João 14, somos lembrados de buscar a direção do Senhor e caminhar com um coração atento à sua Palavra."
+    "message": "Em Zacarias 12-13 e Apocalipse 21:8-17, somos chamados a confiar no Senhor e caminhar com esperança, santidade e obediência."
   },
   {
     "date": "2026-12-11",
-    "oldTestament": "Zacarias 1–7",
+    "oldTestament": "Zacarias 14 + Malaquias 1",
     "wisdom": "",
-    "newTestament": "João 18",
+    "newTestament": "Apocalipse 21:18-27",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Zacarias 1–7 e João 18 nos convidam a confiar no cuidado de Deus e a viver uma fé prática, perseverante e cheia de esperança."
+    "message": "Zacarias 14 + Malaquias 1 e Apocalipse 21:18-27 apontam para a fidelidade de Deus e nos motivam a viver hoje com coração atento a Cristo."
   },
   {
     "date": "2026-12-12",
-    "oldTestament": "Zacarias 8–14",
+    "oldTestament": "Malaquias 2",
     "wisdom": "",
-    "newTestament": "João 19",
+    "newTestament": "Apocalipse 22:1-11",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "As leituras de Zacarias 8–14 e João 19 apontam para a santidade de Deus e nos encorajam a permanecer firmes no caminho do Senhor."
+    "message": "As leituras de Malaquias 2 e Apocalipse 22:1-11 fortalecem nossa confiança em Deus e renovam nosso compromisso de seguir sua vontade."
   },
   {
     "date": "2026-12-13",
-    "oldTestament": "Malaquias 4:4–6",
+    "oldTestament": "Malaquias 3-4",
     "wisdom": "",
-    "newTestament": "João 20",
+    "newTestament": "Apocalipse 22:12-21",
     "oldText": "",
     "wisdomText": "",
     "newText": "",
-    "message": "Em Malaquias 4:4–6 e João 20, a Palavra nos chama a depender da graça de Deus e a transformar a leitura em vida obediente."
+    "message": "As leituras de Malaquias 3-4 e Apocalipse 22:12-21 nos convidam a ouvir Deus com fé e praticar sua Palavra com perseverança."
   }
 ];

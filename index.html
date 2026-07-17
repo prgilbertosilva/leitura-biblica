@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clube de Leitura da Biblia PIBA</title>
     <meta name="description" content="Portal diario do Clube de Leitura da Biblia PIBA com texto biblico, reflexao, progresso e compartilhamento.">
-    <link rel="stylesheet" href="style.css?v=20260716-3">
+    <link rel="stylesheet" href="style.css?v=20260717-1">
   </head>
   <body>
     <div class="app-shell">
@@ -33,7 +33,7 @@
       <main>
         <section class="hero" aria-labelledby="pageTitle">
           <div class="hero-content">
-            <p class="eyebrow" id="dayLabel">Leitura para hoje</p>
+            <a class="eyebrow today-reading-link" id="dayLabel" href="./">Leitura para hoje</a>
             <h1 id="pageTitle">Carregando leitura...</h1>
             <p class="hero-copy" id="summaryText"></p>
             <div class="hero-actions">
@@ -43,7 +43,6 @@
                 <label for="readingDatePicker">Escolher data</label>
                 <span class="date-picker-row">
                   <input id="readingDatePicker" type="date" aria-label="Escolher data da leitura">
-                  <button class="secondary-action date-picker-button" id="openDateButton" type="button">Abrir</button>
                 </span>
               </div>
             </div>
@@ -51,6 +50,11 @@
         </section>
 
         <section class="reading-layout" id="leituras">
+          <section class="reflection reflection-intro" aria-labelledby="reflectionTitle">
+            <h2 id="reflectionTitle">🌱 Reflexao antes da leitura</h2>
+            <p id="reflectionText"></p>
+          </section>
+
           <div class="reading-main">
             <section class="band" id="oldTestamentBlock">
               <div class="section-heading">
@@ -80,9 +84,7 @@
             </section>
           </div>
 
-          <aside class="reflection">
-            <h2>Reflexao do dia</h2>
-            <p id="reflectionText"></p>
+          <aside class="reflection completion-panel">
             <button class="done-button" id="doneButton" type="button">Conclui minha leitura</button>
             <p class="whatsapp-help">Ao abrir o WhatsApp, escolha o grupo <strong>!Clube de Leitura da Bíblia</strong> e envie a mensagem para motivar outros irmãos a fazerem suas leituras.</p>
             <p class="done-note" id="doneNote" aria-live="polite"></p>
@@ -97,8 +99,8 @@
       </main>
     </div>
 
-    <script src="data/leituras.js?v=20260716-8"></script>
+    <script src="data/leituras.js?v=20260717-1"></script>
     <script src="data/biblia-nvi.js"></script>
-    <script src="app.js?v=20260716-9"></script>
+    <script src="app.js?v=20260717-2"></script>
   </body>
 </html>
