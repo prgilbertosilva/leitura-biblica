@@ -1,10 +1,16 @@
-const state = {
+﻿const state = {
   readings: [],
   readingByDate: new Map(),
   active: null,
 };
 
 const appBaseUrl = new URL("./", document.currentScript.src);
+
+const speechState = {
+  utterance: null,
+  speaking: false,
+  paused: false,
+};
 
 const els = {
   title: document.querySelector("#pageTitle"),
@@ -28,6 +34,7 @@ const els = {
   todayButton: document.querySelector("#todayButton"),
   themeButton: document.querySelector("#themeButton"),
   shareButton: document.querySelector("#shareButton"),
+  listenButton: document.querySelector("#listenButton"),
   readingDatePicker: document.querySelector("#readingDatePicker"),
   decreaseFontButton: document.querySelector("#decreaseFontButton"),
   increaseFontButton: document.querySelector("#increaseFontButton"),
@@ -59,6 +66,7 @@ async function loadReadings() {
 }
 
 function renderReading(reading) {
+  stopSpeech();
   state.active = reading;
   const formattedDate = formatDate(reading.date);
   const references = [reading.oldTestament, reading.wisdom, reading.newTestament].filter(Boolean);
@@ -248,6 +256,10 @@ function bindActions() {
   els.doneButton.addEventListener("click", toggleDone);
   els.todayButton.addEventListener("click", () => navigateToDate(todayIso()));
   els.shareButton.addEventListener("click", shareReading);
+  if (els.listenButton) {
+    els.listenButton.addEventListener("click", toggleSpeech);
+    updateSpeechButton();
+  }
   els.readingDatePicker.addEventListener("change", openSelectedDate);
   els.readingDatePicker.addEventListener("input", openSelectedDate);
   els.themeButton.addEventListener("click", toggleTheme);
@@ -290,6 +302,103 @@ function planStartDate() {
 
 function planEndDate() {
   return state.readings[state.readings.length - 1]?.date || todayIso();
+}
+
+
+function toggleSpeech() {
+  if (!("speechSynthesis" in window) || typeof SpeechSynthesisUtterance === "undefined") {
+    if (els.doneNote) {
+      els.doneNote.textContent = "Seu navegador nao oferece leitura em voz alta nesta pagina.";
+    }
+    return;
+  }
+
+  if (speechState.speaking && !speechState.paused) {
+    window.speechSynthesis.pause();
+    speechState.paused = true;
+    updateSpeechButton();
+    return;
+  }
+
+  if (speechState.speaking && speechState.paused) {
+    window.speechSynthesis.resume();
+    speechState.paused = false;
+    updateSpeechButton();
+    return;
+  }
+
+  speakCurrentReading();
+}
+
+function speakCurrentReading() {
+  stopSpeech();
+  const text = speechTextForReading(state.active);
+  if (!text) return;
+
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "pt-BR";
+  utterance.rate = 0.92;
+  utterance.pitch = 1;
+  utterance.onend = resetSpeechState;
+  utterance.onerror = resetSpeechState;
+
+  speechState.utterance = utterance;
+  speechState.speaking = true;
+  speechState.paused = false;
+  updateSpeechButton();
+  window.speechSynthesis.speak(utterance);
+}
+
+function stopSpeech() {
+  if ("speechSynthesis" in window) {
+    window.speechSynthesis.cancel();
+  }
+  resetSpeechState();
+}
+
+function resetSpeechState() {
+  speechState.utterance = null;
+  speechState.speaking = false;
+  speechState.paused = false;
+  updateSpeechButton();
+}
+
+function updateSpeechButton() {
+  if (!els.listenButton) return;
+  const supported = "speechSynthesis" in window && typeof SpeechSynthesisUtterance !== "undefined";
+  els.listenButton.disabled = !supported;
+  els.listenButton.classList.toggle("is-speaking", speechState.speaking && !speechState.paused);
+  els.listenButton.setAttribute("aria-pressed", speechState.speaking && !speechState.paused ? "true" : "false");
+  if (!supported) {
+    els.listenButton.textContent = "Áudio indisponível";
+  } else if (speechState.speaking && speechState.paused) {
+    els.listenButton.textContent = "▶ Continuar leitura";
+  } else if (speechState.speaking) {
+    els.listenButton.textContent = "⏸ Pausar leitura";
+  } else {
+    els.listenButton.textContent = "▶ Ouvir leitura";
+  }
+}
+
+function speechTextForReading(reading) {
+  if (!reading) return "";
+  const parts = [];
+  parts.push(`Leitura para hoje: ${formatDate(reading.date)}.`);
+  if (reading.message) {
+    parts.push(`Reflexao antes da leitura. ${reading.message}`);
+  }
+  addSpeechSection(parts, "Antigo Testamento", reading.oldTestament, els.oldText);
+  addSpeechSection(parts, "Salmos e Proverbios", reading.wisdom, els.wisdomText);
+  addSpeechSection(parts, "Novo Testamento", reading.newTestament, els.newText);
+  return parts.join("\n\n");
+}
+
+function addSpeechSection(parts, label, reference, container) {
+  if (!reference || !container) return;
+  const text = container.innerText.trim();
+  if (!text) return;
+  parts.push(`${label}: ${humanizeReference(reference)}.`);
+  parts.push(text);
 }
 
 function toggleDone() {
@@ -497,3 +606,4 @@ function writePreference(key, value) {
     // Keep controls working even when browser storage is unavailable.
   }
 }
+

@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: light;
   --bg: #f7f3ea;
   --surface: #fffdf7;
@@ -607,3 +607,19 @@ h2 {
     font-size: 1.12rem;
   }
 }
+
+.listen-action {
+  gap: 8px;
+}
+
+.listen-action.is-speaking {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+}
+
+.listen-action:disabled {
+  cursor: not-allowed;
+  opacity: .55;
+}
+
