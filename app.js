@@ -1,4 +1,4 @@
-﻿const state = {
+const state = {
   readings: [],
   readingByDate: new Map(),
   active: null,
@@ -10,6 +10,11 @@ const speechState = {
   utterance: null,
   speaking: false,
   paused: false,
+  chunks: [],
+  chunkIndex: 0,
+  voice: null,
+  nextTimer: null,
+  startTimer: null,
 };
 
 const els = {
@@ -35,6 +40,7 @@ const els = {
   themeButton: document.querySelector("#themeButton"),
   shareButton: document.querySelector("#shareButton"),
   listenButton: document.querySelector("#listenButton"),
+  audioStatus: document.querySelector("#audioStatus"),
   readingDatePicker: document.querySelector("#readingDatePicker"),
   decreaseFontButton: document.querySelector("#decreaseFontButton"),
   increaseFontButton: document.querySelector("#increaseFontButton"),
@@ -258,6 +264,7 @@ function bindActions() {
   els.shareButton.addEventListener("click", shareReading);
   if (els.listenButton) {
     els.listenButton.addEventListener("click", toggleSpeech);
+    primeSpeechVoices();
     updateSpeechButton();
   }
   els.readingDatePicker.addEventListener("change", openSelectedDate);
@@ -306,24 +313,28 @@ function planEndDate() {
 
 
 function toggleSpeech() {
-  if (!("speechSynthesis" in window) || typeof SpeechSynthesisUtterance === "undefined") {
-    if (els.doneNote) {
-      els.doneNote.textContent = "Seu navegador nao oferece leitura em voz alta nesta pagina.";
-    }
+  if (!supportsSpeechSynthesis()) {
+    showSpeechStatus("Este navegador não oferece áudio. Se abriu pelo WhatsApp, use o menu ⋮ > Abrir no navegador e escolha o Chrome.");
     return;
   }
 
   if (speechState.speaking && !speechState.paused) {
-    window.speechSynthesis.pause();
+    // Android treats native pause() as cancel(); keep our place and replay
+    // only the short current chunk when the user continues.
     speechState.paused = true;
+    clearSpeechTimers();
+    speechState.utterance = null;
+    window.speechSynthesis.cancel();
+    showSpeechStatus("Leitura pausada. Ao continuar, o início do trecho atual será repetido.");
     updateSpeechButton();
     return;
   }
 
   if (speechState.speaking && speechState.paused) {
-    window.speechSynthesis.resume();
     speechState.paused = false;
+    showSpeechStatus("");
     updateSpeechButton();
+    speakNextChunk();
     return;
   }
 
@@ -333,44 +344,123 @@ function toggleSpeech() {
 function speakCurrentReading() {
   stopSpeech();
   const text = speechTextForReading(state.active);
-  if (!text) return;
+  const chunks = splitSpeechText(text);
+  if (!chunks.length) return;
 
-  const utterance = new SpeechSynthesisUtterance(text);
+  speechState.chunks = chunks;
+  speechState.chunkIndex = 0;
+  speechState.voice = preferredPortugueseVoice();
+  speechState.speaking = true;
+  speechState.paused = false;
+  showSpeechStatus("");
+  updateSpeechButton();
+  speakNextChunk();
+}
+
+function speakNextChunk(useDefaultVoice = false) {
+  if (!speechState.speaking || speechState.paused) return;
+  if (speechState.chunkIndex >= speechState.chunks.length) {
+    resetSpeechState();
+    return;
+  }
+
+  const utterance = new SpeechSynthesisUtterance(speechState.chunks[speechState.chunkIndex]);
   utterance.lang = "pt-BR";
   utterance.rate = 0.92;
   utterance.pitch = 1;
-  utterance.onend = resetSpeechState;
-  utterance.onerror = resetSpeechState;
+  if (speechState.voice && !useDefaultVoice) {
+    utterance.voice = speechState.voice;
+  }
+
+  const isCurrent = () => speechState.utterance === utterance && speechState.speaking && !speechState.paused;
+  utterance.onstart = () => {
+    if (!isCurrent()) return;
+    window.clearTimeout(speechState.startTimer);
+    speechState.startTimer = null;
+  };
+
+  utterance.onend = () => {
+    if (!isCurrent()) return;
+    clearSpeechTimers();
+    speechState.utterance = null;
+    speechState.chunkIndex += 1;
+    speechState.nextTimer = window.setTimeout(() => speakNextChunk(useDefaultVoice), 60);
+  };
+
+  utterance.onerror = (event) => {
+    if (!isCurrent()) return;
+    clearSpeechTimers();
+    speechState.utterance = null;
+    // Some Android engines reject an explicitly selected voice even though
+    // their default Portuguese voice works. Retry the same text only once.
+    if (!useDefaultVoice && utterance.voice && ["voice-unavailable", "language-unavailable", "synthesis-failed"].includes(event.error)) {
+      speechState.nextTimer = window.setTimeout(() => speakNextChunk(true), 60);
+      return;
+    }
+    failSpeech(event.error);
+  };
 
   speechState.utterance = utterance;
-  speechState.speaking = true;
-  speechState.paused = false;
-  updateSpeechButton();
-  window.speechSynthesis.speak(utterance);
+  speechState.startTimer = window.setTimeout(() => {
+    if (isCurrent()) failSpeech("start-timeout");
+  }, 10000);
+  try {
+    // Keep the first speak() synchronous with the tap: mobile browsers
+    // require user activation, even when getVoices() is still empty.
+    if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+    window.speechSynthesis.speak(utterance);
+  } catch {
+    failSpeech("synthesis-unavailable");
+  }
 }
 
 function stopSpeech() {
-  if ("speechSynthesis" in window) {
-    window.speechSynthesis.cancel();
-  }
+  // Invalidate callbacks before cancel(), which can dispatch late events.
   resetSpeechState();
+  if (supportsSpeechSynthesis()) {
+    window.speechSynthesis.cancel();
+    showSpeechStatus("");
+  }
+}
+
+function clearSpeechTimers() {
+  window.clearTimeout(speechState.nextTimer);
+  window.clearTimeout(speechState.startTimer);
+  speechState.nextTimer = null;
+  speechState.startTimer = null;
 }
 
 function resetSpeechState() {
+  clearSpeechTimers();
   speechState.utterance = null;
   speechState.speaking = false;
   speechState.paused = false;
+  speechState.chunks = [];
+  speechState.chunkIndex = 0;
   updateSpeechButton();
+}
+
+function showSpeechStatus(message) {
+  if (els.audioStatus) els.audioStatus.textContent = message;
+}
+
+function failSpeech(error) {
+  stopSpeech();
+  const message = error === "not-allowed"
+    ? "Toque novamente em Ouvir leitura para liberar o áudio. Se abriu pelo WhatsApp, use o menu ⋮ > Abrir no navegador e escolha o Chrome."
+    : "Não foi possível reproduzir o áudio. No Android, abra esta página no Chrome e confira se há uma voz em português ativada em Configurações > Texto para voz. Depois, toque em Ouvir leitura.";
+  showSpeechStatus(message);
 }
 
 function updateSpeechButton() {
   if (!els.listenButton) return;
-  const supported = "speechSynthesis" in window && typeof SpeechSynthesisUtterance !== "undefined";
+  const supported = supportsSpeechSynthesis();
   els.listenButton.disabled = !supported;
   els.listenButton.classList.toggle("is-speaking", speechState.speaking && !speechState.paused);
   els.listenButton.setAttribute("aria-pressed", speechState.speaking && !speechState.paused ? "true" : "false");
   if (!supported) {
     els.listenButton.textContent = "Áudio indisponível";
+    showSpeechStatus("Este navegador não oferece áudio. Se abriu pelo WhatsApp, use o menu ⋮ > Abrir no navegador e escolha o Chrome.");
   } else if (speechState.speaking && speechState.paused) {
     els.listenButton.textContent = "▶ Continuar leitura";
   } else if (speechState.speaking) {
@@ -380,6 +470,100 @@ function updateSpeechButton() {
   }
 }
 
+function supportsSpeechSynthesis() {
+  return Boolean(window.speechSynthesis) &&
+    typeof window.speechSynthesis.speak === "function" &&
+    typeof window.speechSynthesis.cancel === "function" &&
+    typeof window.speechSynthesis.getVoices === "function" &&
+    typeof SpeechSynthesisUtterance !== "undefined";
+}
+
+function primeSpeechVoices() {
+  if (!supportsSpeechSynthesis()) return;
+  speechState.voice = preferredPortugueseVoice();
+
+  const updateVoice = () => {
+    speechState.voice = preferredPortugueseVoice();
+  };
+
+  if (typeof window.speechSynthesis.addEventListener === "function") {
+    window.speechSynthesis.addEventListener("voiceschanged", updateVoice);
+  } else {
+    window.speechSynthesis.onvoiceschanged = updateVoice;
+  }
+}
+
+function preferredPortugueseVoice() {
+  if (!supportsSpeechSynthesis()) return null;
+  const voices = window.speechSynthesis.getVoices();
+  const portugueseVoices = voices.filter((voice) => /^pt([-_]|$)/i.test(voice.lang || ""));
+  return (
+    portugueseVoices.find((voice) => /^pt[-_]BR$/i.test(voice.lang || "") && voice.localService) ||
+    portugueseVoices.find((voice) => /br/i.test(voice.lang || "")) ||
+    portugueseVoices[0] ||
+    null
+  );
+}
+
+function splitSpeechText(text) {
+  const maxChunkLength = 180;
+  const chunks = [];
+  const sentences = String(text || "")
+    .replace(/\s+/g, " ")
+    .match(/[^.!?;:]+[.!?;:]?|\S+/g) || [];
+  let current = "";
+
+  for (const sentence of sentences.map((item) => item.trim()).filter(Boolean)) {
+    if (sentence.length > maxChunkLength) {
+      if (current) {
+        chunks.push(current);
+        current = "";
+      }
+      chunks.push(...splitLongSpeechChunk(sentence, maxChunkLength));
+      continue;
+    }
+
+    const next = `${current} ${sentence}`.trim();
+    if (next.length <= maxChunkLength) {
+      current = next;
+    } else {
+      if (current) chunks.push(current);
+      current = sentence;
+    }
+  }
+
+  if (current) chunks.push(current);
+  return chunks;
+}
+
+function splitLongSpeechChunk(text, maxChunkLength) {
+  const pieces = [];
+  let current = "";
+
+  for (const word of text.split(/\s+/).filter(Boolean)) {
+    if (word.length > maxChunkLength) {
+      if (current) {
+        pieces.push(current);
+        current = "";
+      }
+      for (let index = 0; index < word.length; index += maxChunkLength) {
+        pieces.push(word.slice(index, index + maxChunkLength));
+      }
+      continue;
+    }
+
+    const next = `${current} ${word}`.trim();
+    if (next.length <= maxChunkLength) {
+      current = next;
+    } else {
+      if (current) pieces.push(current);
+      current = word;
+    }
+  }
+
+  if (current) pieces.push(current);
+  return pieces;
+}
 function speechTextForReading(reading) {
   if (!reading) return "";
   const parts = [];
